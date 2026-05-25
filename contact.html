@@ -875,9 +875,10 @@ a { text-decoration: none; }
             <p class="body-copy" style="color:var(--t-secondary); max-width:48ch; margin-top:0.25rem;">Tell us your requirements. We respond with current availability, source pricing, and the documentation you need before making any decision.</p>
           </div>
 
-          <form class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" novalidate id="buyer-form">
-            <input type="hidden" name="_subject" value="New Gold Buyer Enquiry — Bushiangala Gold">
-            <input type="hidden" name="_next" value="https://www.bushiangalagold.com/contact?sent=true">
+          <form class="contact-form" name="buyer-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate id="buyer-form">
+            <input type="hidden" name="form-name" value="buyer-enquiry">
+            <input type="hidden" name="subject" value="New Gold Buyer Enquiry — Bushiangala Gold">
+            <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
 
             <!-- Name + Company -->
             <div class="form-row">
