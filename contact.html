@@ -678,37 +678,6 @@ a { text-decoration: none; }
   .wa-float-label { display: none; }
   .wa-float { padding: 0.875rem; }
 }
-
-/* ── Red Black Marketing footer credit ── */
-.rbm-credit {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  text-decoration: none;
-  opacity: 0.85;
-  transition: opacity 0.25s ease;
-  flex-shrink: 0;
-}
-.rbm-credit:hover { opacity: 1; }
-.rbm-credit-label {
-  font-family: var(--f-body);
-  font-size: 0.62rem;
-  font-weight: 300;
-  letter-spacing: 0.06em;
-  color: var(--t-secondary);
-  white-space: nowrap;
-}
-.rbm-credit-name {
-  font-family: var(--f-body);
-  font-size: 0.62rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  color: var(--gold);
-  white-space: nowrap;
-}
-@media (max-width: 768px) {
-  .rbm-credit { margin-top: 0.25rem; }
-}
 </style>
 </head>
 <body>
@@ -770,7 +739,6 @@ a { text-decoration: none; }
   <div class="mobile-nav-rule"></div>
   <div class="mobile-nav-scroll">
     <ul class="mobile-nav-links">
-      <li><a href="index.html">Home</a></li>
       <li>
         <a href="gold-products.html">Gold Products</a>
         <ul class="mobile-nav-sub">
@@ -905,10 +873,9 @@ a { text-decoration: none; }
             <p class="body-copy" style="color:var(--t-secondary); max-width:48ch; margin-top:0.25rem;">Tell us your requirements. We respond with current availability, source pricing, and the documentation you need before making any decision.</p>
           </div>
 
-          <form class="contact-form" name="buyer-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate id="buyer-form">
-            <input type="hidden" name="form-name" value="buyer-enquiry">
-            <input type="hidden" name="subject" value="New Gold Buyer Enquiry — Bushiangala Gold">
-            <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" novalidate id="buyer-form">
+            <input type="hidden" name="_subject" value="New Gold Buyer Enquiry — Bushiangala Gold">
+            <input type="hidden" name="_next" value="https://www.bushiangalagold.com/contact?sent=true">
 
             <!-- Name + Company -->
             <div class="form-row">
@@ -1089,7 +1056,6 @@ a { text-decoration: none; }
 ════════════════════════════════════════════════ -->
 <footer class="footer-outer">
 
-  <!-- Contact bar -->
   <div class="f-contact-bar">
     <div class="f-contact-inner">
       <span class="f-contact-label">Call or Message us on WhatsApp</span>
@@ -1098,20 +1064,15 @@ a { text-decoration: none; }
     </div>
   </div>
 
-  <!-- Main link columns -->
   <div class="footer-grid">
-
-    <!-- Brand column -->
     <div class="f-brand-logo">
       <img src="Updated Bushiangala Gold Mining Logo/Bushialanga Gold Logo.webp" alt="Bushialangala Gold Extractives" style="height:220px;width:220px;object-fit:contain;display:block;">
     </div>
     <div class="f-brand-text">
-      <p class="f-logo-main">Bushiangala Gold Mining Extractives</p>
+      <p class="f-logo-main">Bushiangala Gold Extractives</p>
       <p class="f-tagline">Government-licensed gold miner and exporter operating across Kenya, DRC, and South Sudan. With 25 years of operation, we supply 96%&ndash;99.99% certified gold bars direct to international buyers worldwide.</p>
-      <span class="f-badge" style="margin-top:1.25rem;">KE Business Registration &middot; Reg. No. PVT-L51DWDAM</span>
+      <span class="f-badge">KE Business Registration &middot; Reg. No. PVT-L51DWDAM</span>
     </div>
-
-    <!-- Gold Products -->
     <div>
       <p class="f-col-title">Gold Products</p>
       <ul class="f-links">
@@ -1120,11 +1081,9 @@ a { text-decoration: none; }
         <li><a href="12-5kg-gold-bars.html">12.5KG Gold Bars</a></li>
         <li><a href="dore-gold-bars.html">Dor&eacute; Gold Bars</a></li>
         <li><a href="gold-nuggets.html">Gold Nuggets</a></li>
-        <li><a href="custom-bulk-orders.html">Custom &amp; Bulk Orders</a></li>
+        <li><a href="#enquiry-form">Custom &amp; Bulk Orders</a></li>
       </ul>
     </div>
-
-    <!-- Services & Locations -->
     <div>
       <p class="f-col-title">Services &amp; Locations</p>
       <ul class="f-links">
@@ -1132,8 +1091,6 @@ a { text-decoration: none; }
         <li><a href="our-mines-kenya.html">Kenya Gold Mining</a></li>
       </ul>
     </div>
-
-    <!-- Company -->
     <div>
       <p class="f-col-title">Company</p>
       <ul class="f-links">
@@ -1141,24 +1098,21 @@ a { text-decoration: none; }
         <li><a href="insights.html">Blog</a></li>
       </ul>
     </div>
-
-    <!-- Contact & Legal -->
     <div>
       <p class="f-col-title">Contact &amp; Legal</p>
       <ul class="f-links">
         <li><a href="https://wa.me/254100006445" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
-        <li><a href="contact.html#enquiry-form">Get a Quote</a></li>
+        <li><a href="#enquiry-form">Get a Quote</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
       <ul class="f-links" style="margin-top:1.25rem;">
         <li><a href="privacy-policy.html">Privacy Policy</a></li>
         <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+        
       </ul>
     </div>
-
   </div>
 
-  <!-- Social bar -->
   <div class="footer-outer" style="border-top:none;">
     <div class="f-social-bar">
       <span class="f-social-label">Follow us</span>
@@ -1168,19 +1122,15 @@ a { text-decoration: none; }
     </div>
   </div>
 
-  <!-- Bottom bar -->
-  <div class="footer-bar" style="flex-wrap:wrap; gap:0.5rem;">
+  <div class="footer-bar">
     <div>
       <span class="footer-copy">4th Floor, Room 13, Kenrail Towers, Westlands off Ring Road, Nairobi, Kenya</span><br>
       <span class="footer-copy">Licensed under KE Business Registration Service &middot; Reg. No. PVT-L51DWDAM</span>
     </div>
     <span class="footer-copy">E-Mail: <a href="mailto:info@bushiangalagold.com" style="color:inherit;">info@bushiangalagold.com</a></span>
-    <span class="footer-copy">&copy; 2026 Bushiangala Gold Mining Extractives. All rights reserved.</span>
-    <a href="https://redblackmarketing.com" class="rbm-credit" target="_blank" rel="noopener" aria-label="Website designed and built by Red Black Marketing">
-      <span class="rbm-credit-label">Site by</span>
-      <span class="rbm-credit-name">Red Black Marketing</span>
-    </a>
+    <span class="footer-copy">&copy; 2026 Bushiangala Gold Extractives. All rights reserved.</span>
   </div>
+
 </footer>
 
 <!-- WhatsApp float -->
