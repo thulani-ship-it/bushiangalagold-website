@@ -1,0 +1,471 @@
+/*
+ * ============================================================
+ *  BUSHIANGALA GOLD MINING GROUP — BASE STRUCTURE STYLESHEET
+ *  _base-structure.css  |  v1.0  |  April 2026
+ * ============================================================
+ *
+ *  PURPOSE
+ *  -------
+ *  This file is the single source of truth for page-level
+ *  structure decisions made at the Design Foundation stage.
+ *  It must be linked in EVERY page on this site — before any
+ *  page-specific styles — so that background alternation,
+ *  section spacing, and button hierarchy are consistent
+ *  across the entire build.
+ *
+ *  HOW TO USE
+ *  ----------
+ *  Add this line to the <head> of every page HTML file,
+ *  immediately after the Google Fonts link and before any
+ *  <style> block or page-specific stylesheet:
+ *
+ *    <link rel="stylesheet" href="_base-structure.css">
+ *
+ *  Then in your page <style>, only write styles that are
+ *  specific to that page. Do not re-declare anything
+ *  already defined here.
+ *
+ * ============================================================
+ */
+
+
+/* ============================================================
+   SECTION 1 — DESIGN TOKENS
+   Colours, typography, easing. These are the same on every
+   page. Defined once here so they never get out of sync.
+   ============================================================ */
+
+:root {
+  /* Background tiers */
+  --bg-0:              #0B0A08;   /* Primary — darkest, used for hero + odd sections */
+  --bg-1:              #111009;   /* Secondary — slightly lighter, even sections */
+  --bg-2:              #181610;   /* Footer + deepest brand surfaces */
+
+  /* Gold palette */
+  --gold:              #C9A84C;
+  --gold-light:        #E3C36A;
+  --gold-deep:         #8A6818;
+  --gold-border:       rgba(201,168,76,0.14);
+  --gold-border-hover: rgba(201,168,76,0.40);
+
+  /* Text */
+  --t-primary:         #EDE8DF;
+  --t-secondary:       #9A9086;
+  --t-muted:           #52504A;
+  --t-gold:            #C9A84C;
+
+  /* Typography */
+  --f-display:         'Fraunces', Georgia, serif;
+  --f-body:            'Raleway', sans-serif;
+
+  /* Easing */
+  --ease:              cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* ============================================================
+   SECTION 2 — RESET & BASE
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg-0);
+  color: var(--t-primary);
+  font-family: var(--f-body);
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { text-decoration: none; }
+
+
+/* ============================================================
+   SECTION 3 — SECTION BACKGROUND ALTERNATION PATTERN
+   -------------------------------------------------------
+   RULE: Sections alternate between bg-0 (odd) and bg-1
+   (even). The hero always starts on bg-0. The footer always
+   uses bg-2. Never skip a tier — the visual rhythm only works
+   when every section plays its part.
+
+   INNER CARDS: Cards inside a bg-1 section use bg-0 as their
+   surface. Cards inside a bg-0 section use bg-1 on hover.
+   This keeps depth perception consistent throughout.
+
+   Apply these classes to your <section> elements:
+     class="sec-bg-0"  → primary background  (#0B0A08)
+     class="sec-bg-1"  → secondary background (#111009)
+     class="sec-bg-2"  → footer background    (#181610)
+   ============================================================ */
+
+.sec-bg-0 { background: var(--bg-0); }
+.sec-bg-1 { background: var(--bg-1); }
+.sec-bg-2 { background: var(--bg-2); }
+
+/* Standard page alternation order for reference:
+   Section 1  (Hero)          → sec-bg-0
+   Section 2                  → sec-bg-1
+   Section 3                  → sec-bg-0
+   Section 4                  → sec-bg-1
+   Section 5                  → sec-bg-0
+   Section 6                  → sec-bg-1
+   Footer                     → sec-bg-2
+*/
+
+
+/* ============================================================
+   SECTION 4 — SECTION SPACING SCALE
+   -------------------------------------------------------
+   RULE: All sections use the generous spacing scale —
+   padding: clamp(3.5rem, 6vw, 6rem) — chosen to reflect
+   the premium positioning of the Bushiangala brand.
+   Do not reduce this unless explicitly approved.
+   ============================================================ */
+
+.sec-wrap {
+  padding: clamp(3.5rem, 6vw, 6rem) clamp(2rem, 4vw, 5rem);
+}
+
+.sec-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.sec-hdr {
+  margin-bottom: 3rem;
+}
+
+.sec-hdr-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+
+/* ============================================================
+   SECTION 5 — BUTTON HIERARCHY
+   -------------------------------------------------------
+   THREE LEVELS — use only the correct level for each action.
+   Mixing styles on the same page creates visual noise and
+   dilutes the most important CTA.
+
+   LEVEL 1 — PRIMARY CTA (.btn-g)
+   The single most important action: "Buy Now", "Enquire",
+   "Get a Quote". One per page section maximum.
+   Default: gold fill. Hover: inverts to ghost (gold border,
+   gold text, transparent background).
+
+   LEVEL 2 — SECONDARY CTA (.btn-o)
+   Supporting actions alongside primary: "Learn More",
+   "View Products", "Read Our Story". Ghost outline by default.
+   Hover: text shifts to gold.
+
+   LEVEL 3 — TERTIARY / INLINE LINK (.larr)
+   Low-emphasis navigation: "Read the article →", "See more".
+   Text link only — no border, no background. Arrow suffix.
+   ============================================================ */
+
+/* --- Level 1: Primary CTA (gold fill → ghost on hover) --- */
+.btn-g {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(to right, var(--gold) 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right center;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  padding: 0.875rem 1.75rem;
+  border-radius: 0;
+  font-family: var(--f-body);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-position 0.4s var(--ease), color 0.4s var(--ease), border-color 0.4s var(--ease);
+}
+.btn-g:hover {
+  background-position: left center;
+  color: var(--bg-0);
+  border-color: var(--gold);
+}
+
+/* --- Level 2: Secondary CTA (ghost outline → gold text on hover) --- */
+.btn-o {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--t-primary);
+  border: 1px solid var(--gold-border);
+  padding: 0.875rem 1.75rem;
+  border-radius: 0;
+  font-family: var(--f-body);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 0.3s var(--ease), color 0.3s var(--ease);
+}
+.btn-o:hover {
+  border-color: var(--gold-border-hover);
+  color: var(--gold);
+}
+
+/* --- WhatsApp variant (.btn-wa) — secondary level, green accent --- */
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: transparent;
+  color: var(--t-primary);
+  border: 1px solid rgba(37,211,102,0.55);
+  padding: 0.875rem 1.75rem;
+  border-radius: 0;
+  font-family: var(--f-body);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 0.3s var(--ease), color 0.3s var(--ease);
+}
+.btn-wa:hover {
+  border-color: rgba(37,211,102,0.8);
+  color: #25D366;
+}
+.btn-wa::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #25D366;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* --- Level 3: Tertiary inline link (text + arrow → gold on hover) --- */
+.larr {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--f-body);
+  font-weight: 700;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--t-secondary);
+  transition: gap 0.3s var(--ease), color 0.3s var(--ease);
+}
+.larr::after { content: "\2192"; color: var(--gold); }
+.larr:hover { gap: 0.75rem; color: var(--gold); }
+
+/* Convenience row for grouping CTAs with correct spacing */
+.cta-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+
+/* ============================================================
+   SECTION 6 — MID-PAGE CTA RULE
+   -------------------------------------------------------
+   RULE: Mid-page CTAs are always embedded within an adjacent
+   section — never standalone sections. They use a border-top
+   separator and stay under 120px tall.
+
+   Structure always follows this pattern:
+   <div class="sec-cta-embed">
+     <p class="sec-cta-msg">Short supporting message here.</p>
+     <div class="cta-row">
+       <a href="#" class="btn-g">Primary Action</a>
+       <a href="#" class="btn-o">Secondary Action</a>
+     </div>
+   </div>
+   ============================================================ */
+
+.sec-cta-embed {
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--gold-border);
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.sec-cta-msg {
+  font-family: var(--f-body);
+  font-weight: 300;
+  font-size: 0.95rem;
+  color: var(--t-secondary);
+  max-width: 42ch;
+  line-height: 1.6;
+  flex: 1;
+}
+
+
+/* ============================================================
+   SECTION 7 — SHARED TYPOGRAPHIC COMPONENTS
+   Used across every page — headings, labels, body copy,
+   decorative rules. Define once, use everywhere.
+   ============================================================ */
+
+/* Section label (e.g. "— OUR MINES") */
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--f-body);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.label::before {
+  content: "";
+  width: 22px;
+  height: 1px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+/* Section heading */
+.sec-h2 {
+  font-family: var(--f-display);
+  font-weight: 300;
+  font-size: clamp(2rem, 3.8vw, 3.6rem);
+  line-height: 1.1;
+  font-variation-settings: 'opsz' 48, 'WONK' 0;
+  color: var(--t-primary);
+  margin-top: 0.75rem;
+}
+
+/* Card heading */
+.card-h3 {
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  line-height: 1.2;
+  font-variation-settings: 'opsz' 24, 'WONK' 0;
+  color: var(--t-primary);
+}
+
+/* Body copy */
+.body-copy {
+  font-family: var(--f-body);
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.85;
+  color: var(--t-primary);
+}
+
+/* Small badge/chip */
+.chip {
+  font-family: var(--f-body);
+  font-weight: 700;
+  font-size: 0.52rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--gold-border);
+  padding: 0.28rem 0.6rem;
+  border-radius: 0;
+}
+
+/* Gold decorative rule */
+.brul {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, var(--gold), rgba(201,168,76,0.18), transparent);
+}
+
+
+/* ============================================================
+   SECTION 8 — SHARED CARD GRID SYSTEM
+   The cgrid layout is used on products, services, blog,
+   and why-us sections across all pages.
+   ============================================================ */
+
+.cgrid {
+  display: grid;
+  gap: 1px;
+  background: var(--gold-border);
+  border: 1px solid var(--gold-border);
+}
+.cgrid-2 { grid-template-columns: repeat(2, 1fr); }
+.cgrid-3 { grid-template-columns: repeat(3, 1fr); }
+.cgrid-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* Card / cell base */
+.pcard, .wcell {
+  background: var(--bg-0);
+  position: relative;
+  overflow: hidden;
+  padding: 2.25rem 1.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: background 0.3s var(--ease);
+}
+
+/* Gold top-edge reveal on hover */
+.pcard::before, .wcell::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(to right, var(--gold), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.45s var(--ease);
+}
+.pcard:hover, .wcell:hover { background: var(--bg-1); }
+.pcard:hover::before, .wcell:hover::before { transform: scaleX(1); }
+
+/* Ghost number watermark inside cards */
+.ghost-num {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  font-family: var(--f-display);
+  font-weight: 300;
+  font-size: 5.5rem;
+  line-height: 1;
+  font-variation-settings: 'opsz' 72, 'WONK' 0;
+  color: rgba(201,168,76,0.055);
+  pointer-events: none;
+  user-select: none;
+}
+
+
+/* ============================================================
+   SECTION 9 — RESPONSIVE BREAKPOINTS
+   These breakpoints apply universally to all pages.
+   ============================================================ */
+
+/* Tablet — stack to 2 cols */
+@media (max-width: 900px) {
+  .cgrid-4 { grid-template-columns: repeat(2, 1fr); }
+  .cgrid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Mobile — full width */
+@media (max-width: 560px) {
+  .cgrid-2,
+  .cgrid-3,
+  .cgrid-4 { grid-template-columns: 1fr; }
+
+  .sec-cta-embed {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}

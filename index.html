@@ -1,0 +1,1078 @@
+<!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <script>document.documentElement.classList.add('js')</script> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Bushialangala Gold Extractives | Securely Buy Gold From Africa</title> <meta name="description" content="Government-licensed African gold mine supplying certified 99.99% gold bars, dore bars, and nuggets direct to international buyers across the USA and Europe. No agents. Full documentation."> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <style>
+:root { --bg-0: #0B0A08; --bg-1: #111009; --bg-2: #181610; --gold: #C9A84C; --gold-light: #E3C36A; --gold-deep: #8A6818; --gold-border: rgba(201,168,76,0.14); --gold-border-hover: rgba(201,168,76,0.40); --t-primary: #EDE8DF; --t-secondary: #9A9086; --t-muted: #52504A; --t-gold: #C9A84C; --f-display: 'Fraunces', Georgia, serif; --f-body: 'Raleway', sans-serif; --ease: cubic-bezier(0.4, 0, 0.2, 1); }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { background: var(--bg-0); color: var(--t-primary); font-family: var(--f-body); font-weight: 300; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+a { text-decoration: none; }
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; height: 80px; padding: 0 clamp(2rem, 4vw, 5rem); transition: background 0.35s var(--ease), border-bottom 0.35s var(--ease); }
+.nav-inner { max-width: 1320px; margin: 0 auto; height: 100%; display: flex; align-items: center; justify-content: space-between; }
+.nav.scrolled { background: rgba(11,10,8,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--gold-border); }
+.nav-logo { display: flex; align-items: center; flex-shrink: 0; }
+.nav-logo img { height: 200px; width: 200px; object-fit: contain; display: block; padding-top: 1rem; }
+.nav-links { display: flex; align-items: center; gap: 2.75rem; list-style: none; }
+.nav-links a { font-family: var(--f-body); font-weight: 500; font-size: 0.78rem; letter-spacing: 0.04em; color: rgba(237,232,223,0.82); position: relative; padding-bottom: 3px; transition: color 0.3s var(--ease); }
+.nav-links a::after { content: ""; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background: var(--gold); transition: width 0.35s var(--ease); }
+.nav-links a:hover { color: #ffffff; }
+.nav-links a:hover::after { width: 100%; }
+.nav-cta { font-family: var(--f-body); font-weight: 500; font-size: 0.76rem; letter-spacing: 0.06em; text-transform: none; color: var(--bg-0); background: var(--gold); border: 1px solid var(--gold); padding: 0.65rem 1.375rem; border-radius: 0; flex-shrink: 0; transition: background 0.3s var(--ease), color 0.3s var(--ease); }
+.nav-cta:hover { background: transparent; color: var(--gold); }
+/* ── Dropdown nav ── */
+.nav-item--has-drop { position: relative; }
+.nav-chevron { font-size: 0.65rem; display: inline-block; margin-left: 0.3rem; vertical-align: middle; line-height: 1; color: var(--gold); transition: transform 0.25s var(--ease); }
+.nav-item--has-drop:hover .nav-chevron { transform: rotate(180deg); }
+/* Closing transition has a 180ms delay so the dropdown stays open long enough to reach it */
+.nav-dropdown { position: absolute; top: calc(100% + 12px); left: 50%; transform: translateX(-50%) translateY(-6px); min-width: 215px; list-style: none; background: var(--bg-1); border: 1px solid var(--gold-border); border-top: 2px solid var(--gold); opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 0.25s var(--ease) 0.18s, visibility 0.25s var(--ease) 0.18s, transform 0.25s var(--ease) 0.18s; z-index: 300; }
+/* Opening: no delay so it feels instant */
+.nav-item--has-drop:hover .nav-dropdown { opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0); transition: opacity 0.22s var(--ease), visibility 0.22s var(--ease), transform 0.22s var(--ease); }
+/* Invisible bridge fills the gap so the mouse doesn't leave the hover zone mid-travel */
+.nav-dropdown::before { content: ""; position: absolute; top: -14px; left: 0; right: 0; height: 14px; }
+.nav-dropdown li { border-bottom: 1px solid rgba(201,168,76,0.07); }
+.nav-dropdown li:last-child { border-bottom: none; }
+.nav-dropdown a { display: block; padding: 0.8rem 1.25rem; font-family: var(--f-body); font-weight: 400; font-size: 0.74rem; letter-spacing: 0.05em; color: rgba(237,232,223,0.72); transition: color 0.22s var(--ease), background 0.22s var(--ease); white-space: nowrap; }
+.nav-dropdown a:hover { color: var(--gold); background: rgba(201,168,76,0.05); }
+.nav-dropdown a::after { display: none; }
+.nav-burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.nav-burger span{display:block;width:22px;height:1px;background:var(--t-primary)}
+/* ══════════════════════════════════════════════
+   MOBILE NAV DRAWER
+══════════════════════════════════════════════ */
+.mobile-nav-overlay{position:fixed;inset:0;background:rgba(11,10,8,0.8);z-index:390;opacity:0;pointer-events:none;transition:opacity 0.35s var(--ease)}
+.mobile-nav-overlay.open{opacity:1;pointer-events:auto}
+.mobile-nav{position:fixed;top:0;right:0;bottom:0;width:min(300px,85vw);background:var(--bg-1);border-left:1px solid var(--gold-border);z-index:400;transform:translateX(100%);transition:transform 0.38s var(--ease);display:flex;flex-direction:column}
+.mobile-nav.open{transform:translateX(0)}
+.mobile-nav-top{display:flex;justify-content:space-between;align-items:center;padding:0.875rem 1.75rem;flex-shrink:0}
+.mobile-nav-label{font-family:var(--f-body);font-weight:700;font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--t-secondary)}
+.mobile-nav-close{background:none;border:none;color:var(--t-secondary);font-size:1.6rem;font-weight:300;line-height:1;cursor:pointer;padding:0.25rem 0.5rem;transition:color 0.25s var(--ease)}
+.mobile-nav-close:hover{color:var(--gold)}
+.mobile-nav-rule{height:1px;background:linear-gradient(to right,var(--gold),rgba(201,168,76,0.25),transparent);flex-shrink:0}
+.mobile-nav-scroll{flex:1;overflow-y:auto;padding:0.5rem 1.75rem 1rem}
+.mobile-nav-links{list-style:none;display:flex;flex-direction:column}
+.mobile-nav-links>li>a{display:block;font-family:var(--f-body);font-weight:600;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--t-primary);padding:1rem 0;border-bottom:1px solid var(--gold-border);transition:color 0.25s var(--ease)}
+.mobile-nav-links>li>a:hover{color:var(--gold)}
+.mobile-nav-links>li>a[aria-current="page"]{color:var(--gold)}
+.mobile-nav-sub{list-style:none;padding:0.5rem 0 0.75rem 1rem}
+.mobile-nav-sub li a{display:block;font-family:var(--f-body);font-weight:400;font-size:0.82rem;letter-spacing:0.02em;color:rgba(237,232,223,0.65);padding:0.5rem 0;transition:color 0.25s var(--ease)}
+.mobile-nav-sub li a:hover{color:var(--t-primary)}
+.mobile-nav-cta{display:flex;flex-direction:column;gap:0.75rem;padding:1.25rem 1.75rem;border-top:1px solid var(--gold-border);flex-shrink:0;background:var(--bg-1)}
+.label { display: inline-flex; align-items: center; gap: 0.6rem; font-family: var(--f-body); font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+.label::before { content: ""; width: 22px; height: 1px; background: var(--gold); flex-shrink: 0; }
+.btn-g { display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(to right, var(--gold) 50%, transparent 50%); background-size: 200% 100%; background-position: right center; color: var(--gold); border: 1px solid var(--gold); padding: 0.875rem 1.75rem; border-radius: 0; font-family: var(--f-body); font-weight: 700; font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; transition: background-position 0.4s var(--ease), color 0.4s var(--ease), border-color 0.4s var(--ease); }
+.btn-g:hover { background-position: left center; color: var(--bg-0); border-color: var(--gold); }
+.btn-o { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--t-primary); border: 1px solid var(--gold-border); padding: 0.875rem 1.75rem; border-radius: 0; font-family: var(--f-body); font-weight: 700; font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; transition: border-color 0.3s var(--ease), color 0.3s var(--ease); }
+.btn-o:hover { border-color: var(--gold-border-hover); color: var(--gold); }
+.btn-wa { display: inline-flex; align-items: center; gap: 0.6rem; background: transparent; color: var(--t-primary); border: 1px solid rgba(37,211,102,0.55); padding: 0.875rem 1.75rem; border-radius: 0; font-family: var(--f-body); font-weight: 700; font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; transition: border-color 0.3s var(--ease), color 0.3s var(--ease); }
+.btn-wa:hover { border-color: rgba(37,211,102,0.8); color: #25D366; }
+.btn-wa::before { content: ""; width: 14px; height: 14px; background: #25D366; border-radius: 50%; flex-shrink: 0; }
+.chip { font-family: var(--f-body); font-weight: 700; font-size: 0.52rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); padding: 0; border-radius: 0; }
+.larr { display: inline-flex; align-items: center; gap: 0.45rem; font-family: var(--f-body); font-weight: 700; font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--t-secondary); transition: gap 0.3s var(--ease), color 0.3s var(--ease); }
+.larr::after { content: "\2192"; color: var(--gold); }
+.larr:hover, .pcard:hover .larr, .wcell:hover .larr { gap: 0.75rem; color: var(--gold); }
+.brul { width: 100%; height: 1px; background: linear-gradient(to right, var(--gold), rgba(201,168,76,0.18), transparent); }
+.ghost-num { position: absolute; top: 0.5rem; right: 0.75rem; font-family: var(--f-display); font-weight: 300; font-size: 5.5rem; line-height: 1; font-variation-settings: 'opsz' 72, 'WONK' 0; color: rgba(201,168,76,0.055); pointer-events: none; user-select: none; }
+.cgrid { display: grid; gap: 1px; background: var(--gold-border); border: 1px solid var(--gold-border); }
+.cgrid-2 { grid-template-columns: repeat(2, 1fr); }
+.cgrid-3 { grid-template-columns: repeat(3, 1fr); }
+.cgrid-4 { grid-template-columns: repeat(4, 1fr); }
+.pcard, .wcell { background: var(--bg-0); position: relative; overflow: hidden; padding: 2.25rem 1.875rem; display: flex; flex-direction: column; gap: 1rem; transition: background 0.3s var(--ease); }
+.pcard::before, .wcell::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, var(--gold), transparent); transform: scaleX(0); transform-origin: left; transition: transform 0.45s var(--ease); }
+.pcard:hover, .wcell:hover { background: var(--bg-1); }
+.pcard:hover::before, .wcell:hover::before { transform: scaleX(1); }
+.sec-h2 { font-family: var(--f-display); font-weight: 300; font-size: clamp(2rem, 3.8vw, 3.6rem); line-height: 1.1; font-variation-settings: 'opsz' 48, 'WONK' 0; color: var(--t-primary); margin-top: 0.75rem; }
+.card-h3 { font-family: var(--f-display); font-weight: 400; font-size: clamp(1.1rem, 2vw, 1.6rem); line-height: 1.2; font-variation-settings: 'opsz' 24, 'WONK' 0; color: var(--t-primary); }
+.body-copy { font-family: var(--f-body); font-weight: 300; font-size: 0.875rem; line-height: 1.85; color: var(--t-primary); }
+.sec-wrap { padding: clamp(3.5rem, 6vw, 6rem) clamp(2rem, 4vw, 5rem); }
+.sec-inner { max-width: 1320px; margin: 0 auto; }
+.sec-hdr { margin-bottom: 3rem; }
+.sec-hdr-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; margin-bottom: 3rem; flex-wrap: wrap; }
+/* ── HERO — two-column: dark text panel left, image panel right ── */
+.hero { display: grid; grid-template-columns: 50% 50%; min-height: 92vh; padding-top: 80px; }
+.hero-left { background: #000; padding: clamp(2.5rem, 5vw, 5.5rem); display: flex; flex-direction: column; justify-content: center; gap: 1.875rem; }
+.hero-right { position: relative; overflow: hidden; background: #000; }
+@keyframes kenburns { 0% { transform: scale(1); transform-origin: center center; } 100% { transform: scale(1.07); transform-origin: center center; } }
+@keyframes heroFadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+.hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; filter: brightness(0.88) saturate(1.15); animation: kenburns 16s ease-out forwards, heroFadeIn 2s ease-out forwards; opacity: 0; }
+/* Left-edge fade on the image panel — blends seamlessly into the black text panel */
+.hero-right::before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; width: 52%; background: linear-gradient(to right, #000000 0%, rgba(0,0,0,0.88) 25%, rgba(0,0,0,0.45) 60%, transparent 100%); z-index: 1; pointer-events: none; }
+/* Bottom vignette */
+.hero-right::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 30%; background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 100%); z-index: 1; pointer-events: none; }
+/* Thin gold rule along very top of image panel */
+.hero-top-rule { position: absolute; top: 0; left: 0; right: 0; height: 1px; z-index: 2; background: linear-gradient(to right, transparent, var(--gold), transparent); pointer-events: none; }
+.hero-stamp { position: absolute; bottom: 1.875rem; right: 1.875rem; z-index: 3; display: flex; flex-direction: column; align-items: flex-end; gap: 0.3rem; }
+.stamp-purity { font-family: var(--f-display); font-weight: 300; font-size: 2rem; font-variation-settings: 'opsz' 48, 'WONK' 0; color: var(--gold); line-height: 1; letter-spacing: 0.04em; }
+.stamp-label { font-family: var(--f-body); font-weight: 700; font-size: 0.48rem; letter-spacing: 0.26em; text-transform: uppercase; color: rgba(201,168,76,0.55); }
+.hero-coords { position: absolute; top: 1.875rem; right: 1.875rem; z-index: 3; font-family: var(--f-body); font-weight: 500; font-size: 0.5rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(201,168,76,0.35); text-align: right; line-height: 1.85; }
+.hero-h1 { font-family: var(--f-display); font-weight: 500; font-size: clamp(3.8rem, 8.5vw, 9.5rem); line-height: 0.92; letter-spacing: -0.03em; font-variation-settings: 'opsz' 144, 'WONK' 1; }
+.hero-h1 .l1 { display: block; color: var(--t-primary); }
+.hero-h1 .bisect { margin: 0.6rem 0; }
+.hero-h1 .l2 { display: block; color: var(--gold); padding-left: 0.08em; }
+.hero-sub { font-family: var(--f-display); font-weight: 300; font-size: clamp(1rem, 1.8vw, 1.35rem); font-variation-settings: 'opsz' 24, 'WONK' 0; color: var(--t-secondary); line-height: 1.3; }
+.credential { font-family: var(--f-body); font-weight: 700; font-size: 0.58rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--t-secondary); }
+.hero-body { font-family: var(--f-body); font-weight: 300; font-size: 1rem; line-height: 1.85; color: var(--t-primary); max-width: 46ch; }
+.hero-body + .hero-body { margin-top: -0.5rem; }
+.cta-row { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.trust-cert-sec { background: var(--bg-1); }
+.tc-hdr-row { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem 4rem; align-items: end; margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(201,168,76,0.15); }
+.tc-gold { font-style: normal; color: var(--gold); display: block; padding-left: 0.5ch; }
+.tc-rule { width: 48px; height: 1px; background: var(--gold); margin-top: 1.25rem; }
+.trust-bar { background: var(--bg-1); border-top: 1px solid var(--gold-border); border-bottom: 1px solid var(--gold-border); display: grid; grid-template-columns: repeat(5, 1fr); }
+.ti { display: flex; flex-direction: column; align-items: flex-start; gap: 0.2rem; padding: 1.75rem 1.5rem; border-right: 1px solid var(--gold-border); }
+.ti:last-child { border-right: none; }
+.tl { font-family: var(--f-body); font-weight: 700; font-size: 0.52rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--t-secondary); }
+.tv { font-family: var(--f-body); font-weight: 600; font-size: 0.82rem; color: var(--t-primary); line-height: 1.3; margin-top: 0.15rem; }
+.tm { font-family: var(--f-body); font-weight: 400; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-top: 0.35rem; }
+.logo-strip { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--bg-2); border-top: 1px solid rgba(201,168,76,0.08); }
+.ls-cell { display: flex; align-items: center; justify-content: center; padding: 2.25rem 3rem; height: 200px; border-right: 1px solid rgba(201,168,76,0.08); }
+    /* Marquee scroll track — global (desktop + mobile) */
+    /* ── Marquee scroll infrastructure ──────────────────────────────────────────
+       The JS wraps original children in .marquee-track and clones them.
+       Parent needs overflow:hidden to clip the overflowing track.
+       Track needs width:max-content so it expands beyond the viewport —
+       without this the track is capped at 100% parent width, halfW is wrong,
+       and all items are visible at once instead of scrolling off-screen.
+    ── */
+    .marquee-track {
+      display: flex;
+      flex-shrink: 0;
+      width: max-content;
+      will-change: transform;
+    }
+    /* Switch grid parents to block+overflow so the track is not a grid item */
+    .js .trust-bar  { display: block; overflow: hidden; overflow-x: clip; position: relative; }
+    .js .logo-strip { display: block; overflow: hidden; overflow-x: clip; position: relative; }
+    /* Fixed widths only when inside the marquee track — scoped so grid layout
+       is preserved for no-JS users. flex-shrink:0 stops items from squeezing. */
+    .marquee-track .ti {
+      width: 260px;
+      flex-shrink: 0;
+      border-right: 1px solid var(--gold-border);
+    }
+    .marquee-track .ls-cell {
+      width: 340px;
+      height: 200px;
+      flex-shrink: 0;
+      border-right: 1px solid rgba(201,168,76,0.08);
+    }
+
+.ls-cell:last-child { border-right: none; }
+.ls-logo { display: block; max-width: 100%; max-height: 140px; width: auto; height: auto; object-fit: contain; filter: grayscale(100%) brightness(2) contrast(1.2) opacity(0.88); transition: filter 0.4s ease; }
+.ls-logo--lg { display: block; max-width: 100%; max-height: 140px; width: auto; height: auto; object-fit: contain; filter: grayscale(100%) brightness(2) contrast(1.2) opacity(0.88); transition: filter 0.4s ease; }
+.ls-logo:hover, .ls-logo--lg:hover { filter: grayscale(20%) brightness(1.6) sepia(40%) saturate(180%) hue-rotate(5deg) opacity(1); }
+/* BRS logo — wide aspect ratio needs a wider cell and explicit width to render at full size */
+.ls-cell--brs { width: 460px; padding: 2rem 2.5rem; }
+.ls-logo--brs { display: block; width: 380px; max-width: 100%; height: auto; object-fit: contain; filter: grayscale(100%) brightness(2.2) contrast(1.3) opacity(0.92); transition: filter 0.4s ease; }
+.ls-logo--brs:hover { filter: grayscale(20%) brightness(1.6) sepia(40%) saturate(180%) hue-rotate(5deg) opacity(1); }
+.why-sec { background: var(--bg-0); }
+.why-sec .wcell { background: var(--bg-1); }
+.why-sec .wcell:hover { background: var(--bg-0); }
+.why-body { font-family: var(--f-body); font-weight: 300; font-size: 0.875rem; line-height: 1.85; color: var(--t-primary); }
+.why-link-row { margin-top: 2rem; display: flex; align-items: center; }
+.mines-sec { background: var(--bg-1); }
+.mine-card { background: #000; min-height: 460px; position: relative; overflow: hidden; padding: 2.25rem 1.875rem; display: flex; flex-direction: column; gap: 1rem; transition: background 0.3s var(--ease); }
+.mine-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, var(--gold), transparent); transform: scaleX(0); transform-origin: left; transition: transform 0.45s var(--ease); }
+.mine-card::after { display: none; }
+.mine-card > *:not(.mine-card-bg) { position: relative; z-index: 4; }
+.mine-card:hover { background: #000; }
+.mine-card:hover::before { transform: scaleX(1); }
+.mine-flag { font-family: var(--f-body); font-weight: 700; font-size: 0.52rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--t-muted); }
+.mine-stat { display: flex; align-items: center; gap: 0.6rem; margin-top: auto; margin-left: -1.875rem; margin-right: -1.875rem; margin-bottom: -2.25rem; padding: 1.1rem 1.875rem 1.35rem; border-top: 2px solid rgba(201,168,76,0.5); background: rgba(14,12,8,0.97); }
+.mine-stat-val { font-family: var(--f-display); font-weight: 300; font-size: 1.75rem; font-variation-settings: 'opsz' 28, 'WONK' 0; color: #E8C45A; line-height: 1; }
+.mine-stat-lbl { font-family: var(--f-body); font-weight: 700; font-size: 0.56rem; letter-spacing: 0.18em; text-transform: uppercase; color: #EDE8DF; margin-top: 0.2rem; }
+.mine-stat .larr { color: #EDE8DF; font-size: 0.58rem; }
+.mine-stat .larr::after { color: #E8C45A; }
+.mine-stat .larr:hover { color: #E8C45A; }
+.products-sec { background: var(--bg-0); }
+.chip-row { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.proof-sec { background: var(--bg-1); }
+.proof-sec .pcard { background: var(--bg-0); }
+.proof-sec .pcard:hover { background: var(--bg-2); }
+.receipt-top { display: flex; align-items: center; gap: 0.875rem; padding-bottom: 1.25rem; margin-bottom: 1.25rem; border-bottom: 1px solid var(--gold-border); }
+.buyer-name { font-family: var(--f-display); font-weight: 400; font-size: 1.05rem; font-variation-settings: 'opsz' 18, 'WONK' 0; color: var(--t-primary); }
+.buyer-loc { font-family: var(--f-body); font-weight: 700; font-size: 0.5rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--t-secondary); margin-top: 0.2rem; }
+.verified { font-family: var(--f-body); font-weight: 700; font-size: 0.44rem; letter-spacing: 0.2em; text-transform: uppercase; background: var(--gold); color: var(--bg-0); padding: 0.22rem 0.55rem; border-radius: 0; white-space: nowrap; }
+.receipt-fields { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--gold-border); border: 1px solid var(--gold-border); margin-bottom: 1.25rem; }
+.rf { background: var(--bg-0); padding: 1rem 1rem; display: flex; flex-direction: column; gap: 0.4rem; }
+.rf-lbl { font-family: var(--f-body); font-weight: 700; font-size: 0.5rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--t-secondary); }
+.rf-val { font-family: var(--f-display); font-weight: 400; font-size: 1rem; font-variation-settings: 'opsz' 14, 'WONK' 0; color: var(--gold); }
+.receipt-quote { font-family: var(--f-body); font-weight: 300; font-style: italic; font-size: 0.875rem; line-height: 1.85; color: var(--t-primary); }
+.blog-sec { background: var(--bg-1); }
+.blog-card { background: var(--bg-0); position: relative; overflow: hidden; display: flex; flex-direction: column; transition: background 0.3s var(--ease); }
+.blog-img { width: 100%; aspect-ratio: 16/9; overflow: hidden; flex-shrink: 0; }
+.blog-img img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.88) saturate(1.1); transition: transform 0.6s var(--ease); }
+.blog-card:hover .blog-img img { transform: scale(1.04); }
+.blog-body { padding: 2.25rem 1.875rem; display: flex; flex-direction: column; gap: 0.875rem; flex: 1; position: relative; }
+.blog-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, var(--gold), transparent); transform: scaleX(0); transform-origin: left; transition: transform 0.45s var(--ease); }
+.blog-card:hover { background: var(--bg-2); }
+.blog-card:hover::before { transform: scaleX(1); }
+.blog-card:hover .larr { gap: 0.75rem; color: var(--gold); }
+.blog-date { font-family: var(--f-body); font-weight: 700; font-size: 0.5rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--t-muted); }
+.blog-title { font-family: var(--f-display); font-weight: 400; font-size: clamp(1rem, 1.8vw, 1.35rem); line-height: 1.2; font-variation-settings: 'opsz' 24, 'WONK' 0; color: var(--t-primary); }
+.cta-sec { background: var(--bg-2); border-top: 1px solid var(--gold-border); border-bottom: 1px solid var(--gold-border); }
+.cta-inner { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 1.5rem; text-align: center; }
+.cta-h2 { font-family: var(--f-display); font-weight: 300; font-size: clamp(2rem, 3.8vw, 3.6rem); line-height: 1.1; font-variation-settings: 'opsz' 48, 'WONK' 0; color: var(--t-primary); }
+.footer-outer { background: var(--bg-0); border-top: 1px solid var(--gold-border); }
+.footer-grid { max-width: 1320px; margin: 0 auto; padding: 3.5rem clamp(2rem, 4vw, 5rem) 2.5rem; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 3rem; }
+.f-logo-main { font-family: var(--f-display); font-weight: 500; font-size: 1.1rem; font-variation-settings: 'opsz' 14, 'WONK' 0; color: var(--t-primary); line-height: 1.3; }
+.f-tagline { font-family: var(--f-body); font-weight: 300; font-size: 0.78rem; line-height: 1.85; color: var(--t-primary); margin-top: 0.875rem; }
+.f-badge { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1.25rem; font-family: var(--f-body); font-weight: 700; font-size: 0.48rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--t-secondary); }
+.f-col-title { font-family: var(--f-body); font-weight: 700; font-size: 0.52rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.125rem; }
+.f-links { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
+.f-links a { font-family: var(--f-body); font-weight: 300; font-size: 0.8rem; color: #C8C2B8; transition: color 0.3s var(--ease); }
+.f-links a:hover { color: var(--t-primary); }
+.footer-bar { max-width: 1320px; margin: 0 auto; padding: 1.25rem clamp(2rem, 4vw, 5rem); border-top: 1px solid var(--gold-border); display: flex; justify-content: space-between; align-items: center; }
+.footer-copy { font-family: var(--f-body); font-weight: 300; font-size: 0.62rem; letter-spacing: 0.06em; color: var(--t-secondary); }
+.pcard--has-img { padding-top: 0; background: #000; }
+.pcard--has-img:hover { background: #0d0c0a; }
+.pcard--has-img .ghost-num { display: none; }
+.pcard-img-wrap { width: calc(100% + 3.75rem); margin: 0 -1.875rem 1.5rem; height: 220px; overflow: hidden; position: relative; background: #000; }
+.pcard-img-wrap img { width: 100%; height: 100%; object-fit: contain; object-position: center center; display: block; transition: transform 6s ease; }
+.pcard--has-img:hover .pcard-img-wrap img { transform: scale(1.03); }
+.pcard-img-wrap::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, #000 0%, transparent 55%); pointer-events: none; }
+.why-icon { width: 44px; height: 44px; color: var(--gold); margin-bottom: 0.25rem; flex-shrink: 0; }
+.why-stat { font-family: var(--f-display); font-size: clamp(1.6rem, 2.4vw, 2.2rem); font-weight: 300; color: var(--gold); line-height: 1; margin-bottom: 0.5rem; font-variation-settings: 'opsz' 48, 'WONK' 0; }
+.why-stat-label { font-family: var(--f-body); font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--t-muted); margin-bottom: 1rem; display: block; }
+.mine-card-bg { position: absolute; inset: 0; overflow: hidden; z-index: 0; }
+.mine-card-bg img { width: 100%; height: 100%; object-fit: cover; opacity: 1; filter: brightness(0.42) saturate(0.75); transition: opacity 0.45s ease; }
+.mine-card:hover .mine-card-bg img { opacity: 0.18; }
+.mine-card > *:not(.mine-card-bg) { position: relative; z-index: 4; }
+.mines-cta { margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--gold-border); display: flex; align-items: center; gap: 2.5rem; flex-wrap: wrap; }
+.mines-cta-msg { font-family: var(--f-body); font-weight: 300; font-size: 0.95rem; color: var(--t-secondary); max-width: 42ch; line-height: 1.6; flex: 1; }
+.reveal { transition: opacity 0.6s var(--ease), transform 0.6s var(--ease); }
+.js .reveal { opacity: 0; transform: translateY(22px); }
+.js .reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: 0.1s; }
+.reveal-d2 { transition-delay: 0.2s; }
+.reveal-d3 { transition-delay: 0.3s; }
+
+@media (max-width: 1024px) {
+  .nav-links { gap: 1.5rem; }
+  .nav-links a { font-size: 0.74rem; }
+  .cgrid-4 { grid-template-columns: repeat(2, 1fr); }
+  .trust-bar { grid-template-columns: repeat(3, 1fr); }
+  .trust-bar .ti:nth-child(3) { border-right: none; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+  .tc-hdr-row { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
+/* ══════════════════════════════════════════════
+   MOBILE  ≤ 768px
+══════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .nav-burger { display: flex; }
+  .nav { background: rgba(11,10,8,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--gold-border); height: 90px; padding-bottom: 0.5rem; padding-left: 1.5rem; padding-right: 1.5rem; }
+  .hero { display: block; position: relative; min-height: 100svh; padding-top: 0; }
+  .hero-right { position: absolute; inset: 0; height: 100%; z-index: 0; }
+  .hero-right::before { width: 100%; background: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.55) 40%, rgba(0,0,0,0.82) 75%, #000 100%); }
+  .hero-left { position: relative; z-index: 2; background: transparent; min-height: 100svh; padding: 7rem 1.5rem 3rem; justify-content: flex-end; }
+  .hero-stamp { display: none; }
+  .hero-h1 { font-size: clamp(3.5rem, 14vw, 5.5rem); }
+  .hero-sub { color: var(--t-primary); font-size: clamp(1rem, 4vw, 1.35rem); }
+  .credential { color: var(--t-primary); white-space: nowrap; font-size: 0.52rem; letter-spacing: 0.12em; }
+  .cta-row { flex-direction: column; align-items: stretch; }
+  .cta-row .btn-g, .cta-row .btn-wa { justify-content: center; }
+  .cgrid-2, .cgrid-3, .cgrid-4 { grid-template-columns: 1fr; }
+  .trust-cert-sec .sec-inner { display: flex; flex-direction: column; }
+  .logo-strip { order: -1; margin-bottom: 0; }
+  .tc-hdr-row { order: 1; margin-top: 2rem; grid-template-columns: 1fr; }
+  .logo-strip { display: flex; overflow: hidden; scroll-snap-type: none; border-top: none; border-bottom: 1px solid rgba(201,168,76,0.1); }
+  .ls-cell { flex: 0 0 260px; height: 160px; border-right: 1px solid rgba(201,168,76,0.08); border-bottom: none; padding: 1.25rem 1.5rem; }
+  .ls-cell:last-child { border-right: none; }
+  .ls-logo, .ls-logo--lg { height: 100px; width: auto; max-width: 85%; max-height: none; }
+  .logo-strip .ls-cell:nth-child(2) { flex: 0 0 310px; }
+  .logo-strip .ls-cell:nth-child(2) .ls-logo { width: 88%; height: auto; max-width: none; }
+  .trust-bar { order: 0; display: flex; overflow: hidden; border-top: none; border-bottom: 1px solid rgba(201,168,76,0.1); background: var(--bg-1); }
+  .trust-bar .ti {
+    flex: 0 0 175px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.22rem;
+    padding: 0 1rem 0 1rem;
+    border-right: 1px solid rgba(201,168,76,0.08);
+    border-bottom: none;
+    border-left: none;
+    background-image: linear-gradient(to bottom, var(--gold), rgba(201,168,76,0.06));
+    background-size: 3px 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+  .trust-bar .ti:last-child { border-right: none; }
+  .trust-bar .ti .tl { font-family: var(--f-body); font-weight: 700; font-size: 0.46rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--t-secondary); }
+  .trust-bar .ti .tv { font-family: var(--f-body); font-weight: 500; font-size: 0.82rem; line-height: 1.2; color: var(--t-primary); }
+  .trust-bar .ti .tm { display: none; }
+  .sec-hdr-row { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .mine-card { min-height: 340px; }
+  .mines-cta { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+  .receipt-fields { grid-template-columns: repeat(2, 1fr); }
+  /* ── Mobile footer ────────────────────────────────────────────────────────
+     Reset all desktop explicit grid placements, then rebuild as a clean
+     stacked layout: logo full-width → 2-col link grid → full-width brand text.
+  ── */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1.75rem;
+    padding: 2.5rem 1.5rem 2rem;
+  }
+  /* Logo spans full width, centred */
+  .f-brand-logo {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .f-brand-logo img { height: 200px !important; width: 200px !important; margin-bottom: 0; }
+  /* Reset all explicit link-column placements */
+  .footer-grid > div:nth-child(3),
+  .footer-grid > div:nth-child(4),
+  .footer-grid > div:nth-child(5),
+  .footer-grid > div:nth-child(6) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  /* Brand text spans full width beneath link columns */
+  .f-brand-text {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    padding-top: 1.5rem;
+  }
+  /* Contact bar — stack on mobile */
+  .f-contact-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+  }
+  .f-wa-badge { margin-left: 0; }
+  .footer-bar { flex-direction: column; gap: 0.5rem; text-align: left; align-items: flex-start; padding: 1.25rem 1.5rem; }
+  .sec-wrap { padding: clamp(2.5rem, 5vw, 4rem) 1.5rem; }
+}
+
+/* ── Footer contact bar ── */
+.f-contact-bar { background: var(--bg-2); border-top: 1px solid var(--gold-border); border-bottom: 1px solid var(--gold-border); }
+.f-contact-inner { max-width: 1320px; margin: 0 auto; padding: 1.125rem clamp(2rem, 4vw, 5rem); display: flex; align-items: center; gap: 2.5rem; flex-wrap: wrap; }
+.f-contact-label { font-family: var(--f-body); font-weight: 600; font-size: 0.72rem; letter-spacing: 0.08em; color: var(--t-primary); white-space: nowrap; }
+.f-contact-number { display: inline-flex; align-items: center; gap: 0.6rem; font-family: var(--f-body); font-weight: 600; font-size: 0.9rem; color: var(--t-primary); letter-spacing: 0.04em; transition: color 0.3s var(--ease); }
+.f-contact-number:hover { color: var(--gold); }
+.f-contact-number::before { content: ""; display: inline-block; width: 16px; height: 16px; background: #25D366; border-radius: 50%; flex-shrink: 0; }
+.f-wa-badge { display: inline-flex; align-items: center; gap: 0.45rem; font-family: var(--f-body); font-weight: 700; font-size: 0.52rem; letter-spacing: 0.16em; text-transform: uppercase; color: #25D366; border: 1px solid rgba(37,211,102,0.35); padding: 0.3rem 0.75rem; margin-left: auto; }
+
+/* ── Footer grid — base (mobile-first) ── */
+.footer-grid { max-width: 1320px; margin: 0 auto; padding: 3.5rem clamp(2rem, 4vw, 5rem) 2.5rem; display: grid; gap: 2.5rem; }
+/* ── Footer grid — desktop 5-column layout (min-width: 769px only) ── */
+@media (min-width: 769px) {
+  .footer-grid { grid-template-columns: 1fr 1fr 0.8fr 0.7fr 1fr; grid-template-rows: auto auto; }
+  /* Logo: top-left, row 1 col 1 */
+  .f-brand-logo { grid-column: 1; grid-row: 1; }
+  /* Link columns: row 1, explicit placement */
+  .footer-grid > div:nth-child(3) { grid-column: 2; grid-row: 1; }
+  .footer-grid > div:nth-child(4) { grid-column: 3; grid-row: 1; }
+  .footer-grid > div:nth-child(5) { grid-column: 4; grid-row: 1; }
+  .footer-grid > div:nth-child(6) { grid-column: 5; grid-row: 1 / 3; }
+  /* Brand text: row 2, spans cols 1–4 — goes beneath all link columns */
+  .f-brand-text { grid-column: 1 / 5; grid-row: 2; border-top: 1px solid var(--gold-border); padding-top: 2rem; }
+}
+
+/* ── Footer social bar ── */
+.f-social-bar { max-width: 1320px; margin: 0 auto; padding: 1.25rem clamp(2rem, 4vw, 5rem); border-top: 1px solid var(--gold-border); display: flex; align-items: center; gap: 1rem; }
+.f-social-label { font-family: var(--f-body); font-weight: 700; font-size: 0.52rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--t-secondary); }
+.f-social-link { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid var(--gold-border); color: var(--t-secondary); transition: border-color 0.3s var(--ease), color 0.3s var(--ease); }
+.f-social-link:hover { border-color: var(--gold-border-hover); color: var(--gold); }
+.f-social-link svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ── Red Black Marketing footer credit ── */
+.rbm-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.25s ease;
+  flex-shrink: 0;
+}
+.rbm-credit:hover { opacity: 1; }
+.rbm-credit-label {
+  font-family: var(--f-body);
+  font-size: 0.62rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: var(--t-secondary);
+  white-space: nowrap;
+}
+.rbm-credit-name {
+  font-family: var(--f-body);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .rbm-credit { margin-top: 0.25rem; }
+}
+</style></head><body>
+
+<nav class="nav" id="main-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="Updated Bushiangala Gold Mining Logo/Bushialanga Gold Logo.webp" alt="Bushialangala Gold Extractives">
+    </a>
+    <ul class="nav-links">
+      <li class="nav-item--has-drop">
+        <a href="gold-products.html">Gold Products <span class="nav-chevron">▾</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="1kg-gold-bars.html">1KG Gold Bars</a></li>
+          <li><a href="5kg-gold-bars.html">5KG Gold Bars</a></li>
+          <li><a href="12-5kg-gold-bars.html">12.5KG Gold Bars</a></li>
+          <li><a href="dore-gold-bars.html">Doré Gold Bars</a></li>
+          <li><a href="gold-nuggets.html">Gold Nuggets</a></li>
+          <li><a href="custom-bulk-orders.html">Custom &amp; Bulk Orders</a></li>
+        </ul>
+      </li>
+      <li class="nav-item--has-drop">
+        <a href="gold-export-services.html">Services <span class="nav-chevron">▾</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="gold-export-services.html">Gold Export Services</a></li>
+        </ul>
+      </li>
+      <li><a href="#mines">Our Gold</a></li>
+      <li class="nav-item--has-drop">
+        <a href="our-mines-kenya.html">Our Mines <span class="nav-chevron">▾</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="our-mines-kenya.html">Kenya</a></li>
+          
+          
+        </ul>
+      </li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="insights.html">Insights</a></li>
+    </ul>
+    <a href="#enquiry" class="nav-cta">Get a Quote</a>
+    <button class="nav-burger" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════
+     MOBILE NAV DRAWER
+══════════════════════════════════════════════ -->
+<div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation menu">
+
+  <div class="mobile-nav-top">
+    <span class="mobile-nav-label">Menu</span>
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&times;</button>
+  </div>
+  <div class="mobile-nav-rule"></div>
+
+  <div class="mobile-nav-scroll">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="gold-products.html">Gold Products</a>
+        <ul class="mobile-nav-sub">
+          <li><a href="1kg-gold-bars.html">1KG Gold Bars</a></li>
+          <li><a href="5kg-gold-bars.html">5KG Gold Bars</a></li>
+          <li><a href="12-5kg-gold-bars.html">12.5KG Gold Bars</a></li>
+          <li><a href="dore-gold-bars.html">Doré Gold Bars</a></li>
+          <li><a href="gold-nuggets.html">Gold Nuggets</a></li>
+          <li><a href="custom-bulk-orders.html">Custom &amp; Bulk Orders</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="gold-export-services.html">Services</a>
+        <ul class="mobile-nav-sub">
+          <li><a href="gold-export-services.html">Gold Export Services</a></li>
+        </ul>
+      </li>
+      <li><a href="our-gold.html">Our Gold</a></li>
+      <li>
+        <a href="our-mines-kenya.html">Our Mines</a>
+        <ul class="mobile-nav-sub">
+          <li><a href="our-mines-kenya.html">Kenya</a></li>
+          
+          
+        </ul>
+      </li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="mobile-nav-cta">
+    <a href="#enquiry" class="btn-g" id="mobile-nav-quote">Get a Quote &nbsp;&rarr;</a>
+    <a href="https://wa.me/254100006445" class="btn-wa" target="_blank" rel="noopener">WhatsApp Us</a>
+  </div>
+
+</div>
+
+<section class="hero">
+  <!-- Left: text panel -->
+  <div class="hero-left">
+    <span class="label">Bushiangala Gold Extractives</span>
+    <h1 class="hero-h1">
+      <span class="l1">Buy Gold</span>
+      <span class="brul bisect"></span>
+      <span class="l2">From Africa.</span>
+    </h1>
+    <p class="hero-sub">Licensed African Gold Delivered Worldwide</p>
+    <p class="credential">Government-Licensed &nbsp;&middot;&nbsp; Certified &nbsp;&middot;&nbsp; 25&nbsp;Years&nbsp;of&nbsp;Operation</p>
+    <p class="hero-body">If you've looked into buying gold from Africa before, you already know the problem. Most suppliers are agents. The documentation is thin, the provenance is unclear, and there is no one accountable at the end of the chain.</p>
+    <p class="hero-body">Bushialangala Gold Extractives is the mine. We extract, refine, and sell certified gold bars directly to international buyers across the USA and Europe, from our own licensed operations in Kenya, the DRC, and South Sudan.</p>
+    <div class="cta-row">
+      <a href="#enquiry" class="btn-g">Get a Quote &nbsp;&rarr;</a>
+      <a href="https://wa.me/[YOUR_NUMBER]" class="btn-wa" target="_blank" rel="noopener">WhatsApp Enquiry</a>
+    </div>
+  </div>
+  <!-- Right: image panel -->
+  <div class="hero-right">
+    <img class="hero-img" src="Gold Images/Physical Gold from Bushialanga Gold Extractives, Kenya .webp" alt="Physical gold bars from Bushialangala Gold Extractives, Kenya" loading="eager" fetchpriority="high">
+    <div class="hero-top-rule"></div>
+    <div class="hero-coords">Kenya · DRC · South Sudan</div>
+    <div class="hero-stamp">
+      <span class="stamp-purity">99.99%</span>
+      <span class="stamp-label">Au · Certified Purity</span>
+    </div>
+  </div>
+</section>
+
+<section class="trust-cert-sec" id="certifications">
+  <div class="sec-wrap">
+    <div class="sec-inner">
+      <div class="tc-hdr-row reveal">
+        <div>
+          <span class="label">Regulatory Compliance</span>
+          <h2 class="sec-h2">Certified, Licensed<br><span class="tc-gold">&amp; Documented.</span></h2>
+          <div class="tc-rule"></div>
+        </div>
+        <p class="body-copy" style="max-width:58ch; color:var(--t-secondary);">Every tonne of gold we produce operates under full regulatory authority. Our licences, export permits, and environmental certifications are active, verifiable, and available to review before any transaction is agreed.</p>
+      </div>
+    </div>
+  </div>
+  <div class="trust-bar reveal">
+    <div class="ti"><span class="tl">Licence</span><span class="tv">Mineral Trading Licence</span><span class="tm">Government Approved</span></div>
+    <div class="ti"><span class="tl">Export</span><span class="tv">Mineral Export Permit</span><span class="tm">Global Trade Ready</span></div>
+    <div class="ti"><span class="tl">Environment</span><span class="tv">NEMA Certified</span><span class="tm">Compliance Verified</span></div>
+    <div class="ti"><span class="tl">Purity</span><span class="tv">96% &ndash; 99.99% Au</span><span class="tm">Guaranteed Quality</span></div>
+    <div class="ti"><span class="tl">Registration</span><span class="tv">Officially Registered Kenya</span><span class="tm">Business Verified</span></div>
+  </div>
+  <div class="logo-strip reveal">
+    <div class="ls-cell"><img src="Kenya State Dept of Mining Logo.webp" alt="State Department for Mining, Republic of Kenya" class="ls-logo ls-logo--lg" loading="lazy"></div>
+    <div class="ls-cell ls-cell--brs"><img src="Kenya Business Registration Logo.webp" alt="Business Registration Service Kenya" class="ls-logo ls-logo--brs" loading="lazy"></div>
+    <div class="ls-cell"><img src="NEMA Certification Kenya.webp" alt="National Environment Management Authority Kenya" class="ls-logo" loading="lazy"></div>
+  </div>
+</section>
+
+<div class="why-sec" id="why">
+  <div class="sec-wrap">
+    <div class="sec-inner">
+      <div class="sec-hdr-row reveal">
+        <div>
+          <span class="label">Why Our Gold</span>
+          <h2 class="sec-h2">Why Buy Gold from Africa<br>Through Bushiangala?</h2>
+        </div>
+        <p class="body-copy" style="max-width:38ch; color:var(--t-secondary);">Serious buyers ask serious questions before committing. Here are the four things that matter most.</p>
+      </div>
+      <div class="cgrid cgrid-4">
+        <div class="wcell reveal">
+          <span class="ghost-num">01</span>
+          <svg class="why-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 36l8-8m0 0l4-12 8 8-12 4zm0 0l-3 3"/><circle cx="34" cy="10" r="4"/><path d="M30 14l-6 6"/></svg>
+          <div class="why-stat">Mine Direct</div>
+          <span class="why-stat-label">No Agents. No Brokers.</span>
+          <h3 class="card-h3">Direct from the mine, not from an agent.</h3>
+          <p class="why-body">We are the source. Not a broker, not a trading desk. You deal with the operation that extracts and refines the gold you purchase.</p>
+        </div>
+        <div class="wcell reveal reveal-d1">
+          <span class="ghost-num">02</span>
+          <svg class="why-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4l4 8 9 1.3-6.5 6.3 1.5 9L22 24l-8 4.6 1.5-9L9 13.3 18 12z"/><path d="M16 30l-4 8m12-8l4 8"/></svg>
+          <div class="why-stat">99.99% Au</div>
+          <span class="why-stat-label">Independent Assay. Every Bar.</span>
+          <h3 class="card-h3">96% to 99.99% purity, certified on every bar.</h3>
+          <p class="why-body">Every bar is independently assayed before it leaves our facility. You receive the assay report as part of your purchase documentation.</p>
+        </div>
+        <div class="wcell reveal reveal-d2">
+          <span class="ghost-num">03</span>
+          <svg class="why-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4l12 4v10c0 8-5.5 14.5-12 17C15.5 32.5 10 26 10 18V8z"/><path d="M16 22l4 4 8-8"/></svg>
+          <div class="why-stat">3 Licences</div>
+          <span class="why-stat-label">Government Issued. Verifiable.</span>
+          <h3 class="card-h3">Government-licensed and fully compliant.</h3>
+          <p class="why-body">Mineral Trading Licence, Mineral Export Permit, NEMA certificate, and company registration. All four. All verifiable. All shared before you commit.</p>
+        </div>
+        <div class="wcell reveal reveal-d3">
+          <span class="ghost-num">04</span>
+          <svg class="why-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="20" width="36" height="18" rx="2"/><path d="M4 24h36M14 20v-6a8 8 0 0116 0v6"/><circle cx="14" cy="34" r="2"/><circle cx="30" cy="34" r="2"/></svg>
+          <div class="why-stat">30KG / mo</div>
+          <span class="why-stat-label">Active. Consistent. Reliable.</span>
+          <h3 class="card-h3">12 to 30kg exported per month. Reliable supply.</h3>
+          <p class="why-body">Our operations across Kenya, the DRC, and South Sudan maintain active monthly production. You are buying from an operation that ships regularly, not one that trades opportunistically.</p>
+        </div>
+      </div>
+      <div class="why-link-row reveal">
+        <a href="our-gold.html" class="larr">Read the Full Case for Bushiangala Gold</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mines-sec" id="mines">
+  <div class="sec-wrap">
+    <div class="sec-inner">
+      <div class="sec-hdr reveal">
+        <span class="label">Active Operations</span>
+        <h2 class="sec-h2">Our Mining Operations<br>Across Africa</h2>
+        <p class="body-copy" style="margin-top:1rem; max-width:56ch; color:var(--t-secondary);">We operate licensed, active mining sites across three jurisdictions. Each location is regulated under local mining law and contributes to a combined monthly export volume of 12 to 30kg of certified gold.</p>
+      </div>
+      <div class="cgrid cgrid-3">
+        <div class="mine-card reveal">
+          <div class="mine-card-bg"><img src="Images of Mines/Bushiangala, Western Kenya Mine.webp" alt="" aria-hidden="true" loading="lazy"></div>
+          <span class="ghost-num">KE</span>
+          <span class="mine-flag">East Africa</span>
+          <span class="label">Kenya</span>
+          <h3 class="card-h3">Bushiangala, Kakamega County</h3>
+          <p class="body-copy">Our Kenyan gold mine is located in Bushiangala, Kakamega County. Our head office and operations team are based in Nairobi, managing export logistics, buyer relations, and compliance across all three jurisdictions. Licensed under the State Department of Mining.</p>
+          <div class="mine-stat">
+            <div>
+              <div class="mine-stat-val" data-count="3" data-suffix="" style="color:#E8C45A;">3</div>
+              <div class="mine-stat-lbl" style="color:#EDE8DF;">Active Licences</div>
+            </div>
+            <div style="margin-left:auto;"><a href="our-mines-kenya.html" class="larr" style="color:#EDE8DF;">Explore Kenya Operations</a></div>
+          </div>
+        </div>
+        <div class="mine-card reveal reveal-d1">
+          <div class="mine-card-bg"><img src="Images of Mines/South Kivu, DRC Mine -1.webp" alt="" aria-hidden="true" loading="lazy"></div>
+          <span class="ghost-num">DRC</span>
+          <span class="mine-flag">Central Africa</span>
+          <span class="label">Democratic Republic of Congo</span>
+          <h3 class="card-h3">Luhihi, South Kivu Province</h3>
+          <p class="body-copy">Our DRC mining operations are located in Luhihi, South Kivu Province, one of the most productive gold-bearing regions in Central Africa. Gold sourced from Luhihi is independently assayed, fully documented, and exported under permit.</p>
+          <div class="mine-stat">
+            <div>
+              <div class="mine-stat-val" data-count="99.99" data-suffix="%" data-decimals="2" style="color:#E8C45A;">99.99%</div>
+              <div class="mine-stat-lbl" style="color:#EDE8DF;">Certified Purity</div>
+            </div>
+          </div>
+        </div>
+        <div class="mine-card reveal reveal-d2">
+          <div class="mine-card-bg"><img src="Images of Mines/South Sudan, South Kivu Mine.webp" alt="" aria-hidden="true" loading="lazy"></div>
+          <span class="ghost-num">SS</span>
+          <span class="mine-flag">Northeast Africa</span>
+          <span class="label">South Sudan</span>
+          <h3 class="card-h3">Darfur Region</h3>
+          <p class="body-copy">Our South Sudan gold mine is located in Darfur, an active gold-producing region that contributes to our overall supply capacity. Gold from this location meets the same purity and certification standards as all Bushiangala supply.</p>
+          <div class="mine-stat">
+            <div>
+              <div class="mine-stat-val" data-count="30" data-suffix="kg" style="color:#E8C45A;">30kg</div>
+              <div class="mine-stat-lbl" style="color:#EDE8DF;">Max Monthly Export</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mines-cta reveal">
+        <p class="mines-cta-msg">Ready to discuss a purchase? Our team responds to all serious enquiries within 24 hours. Full documentation provided before any transaction is agreed.</p>
+        <div class="cta-row">
+          <a href="#enquiry" class="btn-g">Get a Quote &nbsp;&rarr;</a>
+          <a href="https://wa.me/[YOUR_NUMBER]" class="btn-wa" target="_blank" rel="noopener">WhatsApp Enquiry</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="products-sec" id="products">
+  <div class="sec-wrap">
+    <div class="sec-inner">
+      <div class="sec-hdr reveal">
+        <span class="label">Gold Products</span>
+        <h2 class="sec-h2">Buy Gold from Africa:<br>Our Products</h2>
+        <p class="body-copy" style="margin-top:1rem; max-width:58ch; color:var(--t-secondary);">We supply physical gold in a range of formats and weights to suit both private investors and institutional buyers. All products are independently assayed, export-certified, and shipped directly from our mining operations.</p>
+      </div>
+      <div class="cgrid cgrid-3">
+        <article class="pcard pcard--has-img reveal">
+          <div class="pcard-img-wrap" style="padding: 12px 28px"><img src="Gold Images/Updated Physical Gold from Bushiangala Gold Extractives Image.webp" alt="1KG Gold Bar" loading="lazy"></div>
+          <div class="chip-row"><span class="chip">1KG Bar</span><span class="chip">96–99.99% Pure</span></div>
+          <h3 class="card-h3">1KG Gold Bars</h3>
+          <p class="body-copy">Investment-grade 1kg gold bars, 96% to 99.99% pure. Independently assayed with full certification. A practical entry weight for private investors and portfolio buyers looking to hold physical gold from Africa.</p>
+          <a href="1kg-gold-bars.html" class="larr">1KG Gold Bars from Africa</a>
+        </article>
+        <article class="pcard pcard--has-img reveal reveal-d1">
+          <div class="pcard-img-wrap" style="padding: 12px 28px"><img src="Gold Images/Updated Physical Gold from Bushiangala Gold Extractives Image.webp" alt="5KG Gold Bar" loading="lazy"></div>
+          <div class="chip-row"><span class="chip">5KG Bar</span><span class="chip">Certified</span></div>
+          <h3 class="card-h3">5KG Gold Bars</h3>
+          <p class="body-copy">Larger volume purchases in 5kg certified gold bars. Each bar is independently assayed and exported under full permit. Suited to buyers adding significant weight to an existing portfolio or asset holding.</p>
+          <a href="5kg-gold-bars.html" class="larr">5KG Gold Bars from Africa</a>
+        </article>
+        <article class="pcard pcard--has-img reveal reveal-d2">
+          <div class="pcard-img-wrap"><img src="Gold Images/Bushialanga gold black 12.5.webp" alt="12.5KG Gold Bar" loading="lazy"></div>
+          <div class="chip-row"><span class="chip">12.5KG Bar</span><span class="chip">Institutional</span></div>
+          <h3 class="card-h3">12.5KG Gold Bars</h3>
+          <p class="body-copy">The international standard gold bar weight used by central banks and institutional buyers worldwide. Our 12.5kg bars are supplied at 96% to 99.99% purity, fully certified and export-documented.</p>
+          <a href="12-5kg-gold-bars.html" class="larr">12.5KG Gold Bars from Africa</a>
+        </article>
+        <article class="pcard pcard--has-img reveal">
+          <div class="pcard-img-wrap"><img src="Gold Images/Bushialanga Gold Dore.webp" alt="Dore Gold Bar" loading="lazy"></div>
+          <div class="chip-row"><span class="chip">Dore Bar</span><span class="chip">90%+ Purity</span></div>
+          <h3 class="card-h3">Dore Gold Bars (90%+)</h3>
+          <p class="body-copy">Unrefined dore bars at 90% purity and above, sourced directly from our smelting operations. Popular with refineries and buyers who process gold to final specification themselves. Full export documentation included.</p>
+          <a href="dore-gold-bars.html" class="larr">Dore Gold Bars from Africa</a>
+        </article>
+        <article class="pcard pcard--has-img reveal reveal-d1">
+          <div class="pcard-img-wrap" style="padding: 10px 24px"><img src="Gold Images/Gold Nuggets Website Image.webp" alt="African Gold Nuggets" loading="lazy"></div>
+          <div class="chip-row"><span class="chip">Natural Form</span><span class="chip">Verified Origin</span></div>
+          <h3 class="card-h3">Gold Nuggets</h3>
+          <p class="body-copy">Natural gold nuggets sourced from our operations across Kenya, the DRC, and South Sudan. Available in varying weights. Each lot is assayed and documented. A distinct option for collectors and specialist investors.</p>
+          <a href="gold-nuggets.html" class="larr">African Gold Nuggets</a>
+        </article>
+        <article class="pcard reveal reveal-d2">
+          <span class="ghost-num">06</span>
+          <div class="chip-row"><span class="chip">Bulk</span><span class="chip">Custom Spec</span></div>
+          <h3 class="card-h3">Custom &amp; Bulk Orders</h3>
+          <p class="body-copy">Purchasing at scale or to a specific specification? We handle custom and bulk gold orders for institutional buyers, trading firms, and refineries. Pricing, weight, purity, and logistics can all be discussed directly.</p>
+          <a href="#enquiry" class="larr">Custom and Bulk Gold Orders</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SOCIAL PROOF SECTION REMOVED — awaiting verified client testimonials -->
+
+<div class="blog-sec" id="insights">
+  <div class="sec-wrap">
+    <div class="sec-inner">
+      <div class="sec-hdr-row reveal">
+        <div>
+          <span class="label">Insights</span>
+          <h2 class="sec-h2">Insights for<br>Gold Buyers</h2>
+        </div>
+        <p class="body-copy" style="max-width:36ch; color:var(--t-secondary);">Guidance and analysis for investors and buyers looking to source, verify, and hold physical gold from African mining operations.</p>
+      </div>
+      <div class="cgrid cgrid-2" id="blog-grid">
+        <!-- Blog posts rendered by BLOG_POSTS array in the page script -->
+      </div>
+      <div class="why-link-row reveal" style="margin-top:2rem; justify-content:center;">
+        <a href="insights.html" class="larr">View All Gold Buyer Insights</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-sec" id="enquiry">
+  <div class="sec-wrap">
+    <div class="cta-inner reveal">
+      <span class="label" style="justify-content:center;">Make an Enquiry</span>
+      <h2 class="cta-h2">Ready to Make<br>an Enquiry?</h2>
+      <p class="hero-body" style="text-align:center; max-width:52ch;">Contact our team directly with your requirements. We'll respond with current availability, source pricing, and the verification documents you need before making any decision. No pressure. No agents. No time-limited offers.</p>
+      <div class="cta-row" style="justify-content:center; flex-wrap:wrap;">
+        <a href="#" class="btn-g">Get a Quote &nbsp;&rarr;</a>
+        <a href="https://wa.me/[YOUR_NUMBER]" class="btn-wa" target="_blank" rel="noopener">WhatsApp Enquiry</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer-outer">
+
+  <!-- Contact bar -->
+  <div class="f-contact-bar">
+    <div class="f-contact-inner">
+      <span class="f-contact-label">Call or Message us on WhatsApp</span>
+      <a href="https://wa.me/254100006445" class="f-contact-number" target="_blank" rel="noopener">+254 100 006 445</a>
+      <span class="f-wa-badge">WhatsApp Available</span>
+    </div>
+  </div>
+
+  <!-- Main link columns -->
+  <div class="footer-grid">
+
+    <!-- Brand column -->
+    <div class="f-brand-logo">
+      <img src="Updated Bushiangala Gold Mining Logo/Bushialanga Gold Logo.webp" alt="Bushialangala Gold Extractives" style="height:220px;width:220px;object-fit:contain;display:block;">
+    </div>
+    <div class="f-brand-text">
+      <p class="f-logo-main">Bushiangala Gold Mining Extractives</p>
+      <p class="f-tagline">Government-licensed gold miner and exporter operating across Kenya, DRC, and South Sudan. With 25 years of operation, we supply 96%&ndash;99.99% certified gold bars direct to international buyers worldwide.</p>
+      <span class="f-badge" style="margin-top:1.25rem;">KE Business Registration &middot; Reg. No. PVT-L51DWDAM</span>
+    </div>
+
+    <!-- Gold Products -->
+    <div>
+      <p class="f-col-title">Gold Products</p>
+      <ul class="f-links">
+        <li><a href="1kg-gold-bars.html">1KG Gold Bars</a></li>
+        <li><a href="5kg-gold-bars.html">5KG Gold Bars</a></li>
+        <li><a href="12-5kg-gold-bars.html">12.5KG Gold Bars</a></li>
+        <li><a href="dore-gold-bars.html">Dor&eacute; Gold Bars</a></li>
+        <li><a href="gold-nuggets.html">Gold Nuggets</a></li>
+        <li><a href="custom-bulk-orders.html">Custom &amp; Bulk Orders</a></li>
+      </ul>
+    </div>
+
+    <!-- Services & Locations -->
+    <div>
+      <p class="f-col-title">Services &amp; Locations</p>
+      <ul class="f-links">
+        <li><a href="gold-export-services.html">Gold Export Services</a></li>
+        <li><a href="our-mines-kenya.html">Kenya Gold Mining</a></li>
+      </ul>
+    </div>
+
+    <!-- Company -->
+    <div>
+      <p class="f-col-title">Company</p>
+      <ul class="f-links">
+        <li><a href="our-gold.html">Our Gold</a></li>
+        <li><a href="insights.html">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact & Legal -->
+    <div>
+      <p class="f-col-title">Contact &amp; Legal</p>
+      <ul class="f-links">
+        <li><a href="https://wa.me/254100006445" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+        <li><a href="contact.html#enquiry-form">Get a Quote</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <ul class="f-links" style="margin-top:1.25rem;">
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Social bar -->
+  <div class="footer-outer" style="border-top:none;">
+    <div class="f-social-bar">
+      <span class="f-social-label">Follow us</span>
+      <a href="https://instagram.com/bushiangalagold" class="f-social-link" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bar" style="flex-wrap:wrap; gap:0.5rem;">
+    <div>
+      <span class="footer-copy">4th Floor, Room 13, Kenrail Towers, Westlands off Ring Road, Nairobi, Kenya</span><br>
+      <span class="footer-copy">Licensed under KE Business Registration Service &middot; Reg. No. PVT-L51DWDAM</span>
+    </div>
+    <span class="footer-copy">E-Mail: <a href="mailto:info@bushiangalagold.com" style="color:inherit;">info@bushiangalagold.com</a></span>
+    <span class="footer-copy">&copy; 2026 Bushiangala Gold Mining Extractives. All rights reserved.</span>
+    <a href="https://redblackmarketing.com" class="rbm-credit" target="_blank" rel="noopener" aria-label="Website designed and built by Red Black Marketing">
+      <span class="rbm-credit-label">Site by</span>
+      <span class="rbm-credit-name">Red Black Marketing</span>
+    </a>
+  </div>
+</footer>
+
+<script>
+var mainNav = document.getElementById('main-nav');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 36) {
+    mainNav.classList.add('scrolled');
+  } else {
+    mainNav.classList.remove('scrolled');
+  }
+});
+
+/* ── Mobile nav drawer ── */
+var mobileNav=document.getElementById('mobile-nav');
+var mobileNavOverlay=document.getElementById('mobile-nav-overlay');
+var navBurger=document.querySelector('.nav-burger');
+var mobileNavClose=document.getElementById('mobile-nav-close');
+var mobileNavQuote=document.getElementById('mobile-nav-quote');
+function openMobileNav(){mobileNav.classList.add('open');mobileNavOverlay.classList.add('open');document.body.style.overflow='hidden'}
+function closeMobileNav(){mobileNav.classList.remove('open');mobileNavOverlay.classList.remove('open');document.body.style.overflow=''}
+if(navBurger)navBurger.addEventListener('click',openMobileNav);
+if(mobileNavClose)mobileNavClose.addEventListener('click',closeMobileNav);
+if(mobileNavOverlay)mobileNavOverlay.addEventListener('click',closeMobileNav);
+if(mobileNavQuote)mobileNavQuote.addEventListener('click',closeMobileNav);
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mobileNav.classList.contains('open'))closeMobileNav()});
+
+var CARD_SEL = '.pcard, .wcell, .mine-card, .blog-card';
+var DELAY = 100;
+
+var gridObs = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (!entry.isIntersecting) return;
+    var cards = Array.from(entry.target.querySelectorAll(CARD_SEL));
+    cards.forEach(function(card, i) {
+      setTimeout(function() { card.classList.add('visible'); }, i * DELAY);
+    });
+    gridObs.unobserve(entry.target);
+  });
+}, { threshold: 0.05 });
+
+document.querySelectorAll('.cgrid').forEach(function(grid) { gridObs.observe(grid); });
+
+var revObs = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) { e.target.classList.add('visible'); revObs.unobserve(e.target); }
+  });
+}, { threshold: 0.07 });
+
+document.querySelectorAll('.reveal').forEach(function(el) {
+  if (!el.closest('.cgrid')) { revObs.observe(el); }
+});
+
+function runCounter(el) {
+  var target = parseFloat(el.dataset.count);
+  var suffix = el.dataset.suffix || '';
+  var decimals = parseInt(el.dataset.decimals || '0', 10);
+  var dur = 1800;
+  var start = performance.now();
+  function step(now) {
+    var elapsed = now - start;
+    var prog = Math.min(elapsed / dur, 1);
+    var eased = 1 - Math.pow(1 - prog, 3);
+    el.textContent = (eased * target).toFixed(decimals) + suffix;
+    if (prog < 1) { requestAnimationFrame(step); }
+  }
+  requestAnimationFrame(step);
+}
+
+var cntObs = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) { runCounter(e.target); cntObs.unobserve(e.target); }
+  });
+}, { threshold: 0.6 });
+
+document.querySelectorAll('[data-count]').forEach(function(el) { cntObs.observe(el); });
+
+  /* ── Dynamic blog posts ────────────────────────────────────────────────────
+     To add a new article: paste a new object at the TOP of BLOG_POSTS (newest
+     first). The homepage always shows the first 4. When moving to WordPress,
+     replace the BLOG_POSTS array + renderPosts() call with a single fetch()
+     to the WP REST API — the card-building code above stays identical.
+  ──────────────────────────────────────────────────────────────────────── */
+  (function () {
+    var grid = document.getElementById('blog-grid');
+    if (!grid) return;
+
+    var NUMS   = ['01', '02', '03', '04'];
+    var DELAYS = ['', ' reveal-d1', ' reveal-d2', ' reveal-d3'];
+
+    function buildCard(post, i) {
+      var imgHtml = post.image
+        ? '<div class="blog-img"><img src="' + post.image + '" alt="' + post.title + '" loading="lazy"></div>'
+        : '';
+      return '<div class="blog-card reveal' + DELAYS[i] + '">' +
+        imgHtml +
+        '<div class="blog-body">' +
+          '<span class="ghost-num" style="font-size:3.5rem;">' + NUMS[i] + '</span>' +
+          '<span class="chip">' + post.category + '</span>' +
+          '<span class="blog-date">' + post.date + '</span>' +
+          '<h3 class="blog-title">' + post.title + '</h3>' +
+          '<p class="body-copy" style="font-size:0.82rem;">' + post.excerpt + '</p>' +
+          '<a href="' + (post.link || '#') + '" class="larr" style="margin-top:auto;">Read Post</a>' +
+        '</div>' +
+      '</div>';
+    }
+
+    function renderPosts(posts) {
+      grid.innerHTML = posts.slice(0, 4).map(buildCard).join('');
+      grid.querySelectorAll('.reveal').forEach(function (el) { revObs.observe(el); });
+    }
+
+    /* ── ADD NEW ARTICLES HERE (newest first, max 4 shown) ── */
+    var BLOG_POSTS = [
+      {
+        date:     'May 2026',
+        category: 'Sourcing',
+        title:    'Where to Buy Gold in Kenya Safely: Trusted Sources and What to Look For',
+        excerpt:  'For most international investors, buying physical gold from Kenya raises an immediate question: is this real? This guide covers where to buy gold in Kenya, what documentation to insist on, and how to tell a genuine mining company from an intermediary.',
+        image:    'Blog Post Images/Buy Gold In Kenya - Article Featured Image.webp',
+        link:     'blog/where-to-buy-gold-in-kenya.html'
+      },
+      {
+        date:     'April 2026',
+        category: 'Compliance',
+        title:    'How to Export Gold from Africa to Europe',
+        excerpt:  'The process of exporting gold from Africa to Europe is more regulated than most buyers expect. This guide covers what documentation the African side requires and how European import regulations apply.',
+        image:    'Blog Post Images/Export African Gold - Article Featured Image.webp',
+        link:     'blog/how-to-export-gold-from-africa-to-europe.html'
+      }
+    ];
+
+    renderPosts(BLOG_POSTS);
+  }());
+
+  /* ── Mobile marquee: auto-scroll + manual touch drag ──────────────────────
+     rAF loop drives translateX on a flex track. flex-shrink:0 ensures the
+     track is as wide as all its children so the distance measurement is right.
+  ──────────────────────────────────────────────────────────────────────── */
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    function makeMarquee(el, secPerSet) {
+      if (!el) return;
+      var origKids = Array.from(el.children);
+      if (!origKids.length) return;
+      var track = document.createElement('div');
+      track.className = 'marquee-track';
+      origKids.forEach(function (k) { track.appendChild(k); });
+      el.appendChild(track);
+
+      function run() {
+        /* Force layout reflow so offsetWidth is accurate after fonts/images load */
+        void track.offsetWidth;
+        var setW = track.offsetWidth;
+        if (setW <= 0) { setTimeout(run, 100); return; }
+
+        /* Clone enough times to fill 5x viewport -- guarantees no gaps on any screen */
+        var copies = Math.ceil((window.innerWidth * 5) / setW) + 2;
+        for (var i = 0; i < copies; i++) {
+          origKids.forEach(function (k) { track.appendChild(k.cloneNode(true)); });
+        }
+
+        var pxPerSec = setW / secPerSet, pos = 0, dragging = false,
+            touchStartX = 0, posAtDragStart = 0, lastTs = null;
+
+        function tick(ts) {
+          if (!dragging) {
+            if (lastTs !== null) {
+              pos -= pxPerSec * (ts - lastTs) / 1000;
+              /* Use while-loop so a long frame never breaks the wrap */
+              while (pos <= -setW) { pos += setW; }
+              while (pos > 0) { pos -= setW; }
+            }
+            lastTs = ts;
+            track.style.transform = 'translateX(' + pos + 'px)';
+          }
+          requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+
+        el.addEventListener('touchstart', function (e) {
+          dragging = true; lastTs = null;
+          touchStartX = e.touches[0].clientX; posAtDragStart = pos;
+        }, { passive: true });
+        el.addEventListener('touchmove', function (e) {
+          if (!dragging) return;
+          var delta = e.touches[0].clientX - touchStartX;
+          pos = posAtDragStart + delta;
+          while (pos > 0) { pos -= setW; }
+          while (pos < -setW) { pos += setW; }
+          track.style.transform = 'translateX(' + pos + 'px)';
+        }, { passive: true });
+        el.addEventListener('touchend', function () { dragging = false; }, { passive: true });
+      }
+
+      /* Wait for full page load -- fonts + images must be painted for accurate widths */
+      if (document.readyState === 'complete') {
+        run();
+      } else {
+        window.addEventListener('load', run, { once: true });
+      }
+    }
+    makeMarquee(document.querySelector('.logo-strip'), 20);
+    makeMarquee(document.querySelector('.trust-bar'), 15);
+  }());
+</script>
+</body>
+</html>

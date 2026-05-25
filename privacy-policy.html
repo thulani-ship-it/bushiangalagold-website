@@ -1,0 +1,535 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | Bushiangala Gold Extractives</title>
+<meta name="description" content="Privacy Policy for Bushiangala Gold Extractives. Learn how we collect, use, and protect your personal data when you use our website or submit a gold purchase enquiry.">
+<link rel="canonical" href="https://bushiangalagold.com/privacy-policy">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bushiangalagold.com/"},{"@type":"ListItem","position":2,"name":"Privacy Policy","item":"https://bushiangalagold.com/privacy-policy"}]}
+</script>
+<style>
+/* ══ TOKENS + RESET ══ */
+:root{--bg-0:#0B0A08;--bg-1:#111009;--bg-2:#181610;--gold:#C9A84C;--gold-light:#E3C36A;--gold-deep:#8A6818;--gold-border:rgba(201,168,76,0.14);--gold-border-hover:rgba(201,168,76,0.40);--t-primary:#EDE8DF;--t-secondary:#9A9086;--t-muted:#52504A;--t-gold:#C9A84C;--f-display:'Fraunces',Georgia,serif;--f-body:'Raleway',sans-serif;--ease:cubic-bezier(0.4,0,0.2,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{background:var(--bg-0);color:var(--t-primary);font-family:var(--f-body);font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:clip}
+a{text-decoration:none}
+
+/* ══ NAVIGATION ══ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:200;height:80px;padding:0 clamp(2rem,4vw,5rem);transition:background 0.35s var(--ease),border-bottom 0.35s var(--ease)}
+.nav-inner{max-width:1320px;margin:0 auto;height:100%;display:flex;align-items:center;justify-content:space-between}
+.nav.scrolled{background:rgba(11,10,8,0.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--gold-border)}
+.nav-logo{display:flex;align-items:center;flex-shrink:0}
+.nav-logo img{height:200px;width:200px;object-fit:contain;display:block;padding-top:1rem}
+.nav-links{display:flex;align-items:center;gap:2.75rem;list-style:none}
+.nav-links a{font-family:var(--f-body);font-weight:500;font-size:0.78rem;letter-spacing:0.04em;color:rgba(237,232,223,0.82);position:relative;padding-bottom:3px;transition:color 0.3s var(--ease)}
+.nav-links a::after{content:"";position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--gold);transition:width 0.35s var(--ease)}
+.nav-links a:hover{color:#fff}
+.nav-links a:hover::after{width:100%}
+.nav-cta{font-family:var(--f-body);font-weight:500;font-size:0.76rem;letter-spacing:0.06em;color:var(--bg-0);background:var(--gold);border:1px solid var(--gold);padding:0.65rem 1.375rem;border-radius:0;flex-shrink:0;transition:background 0.3s var(--ease),color 0.3s var(--ease)}
+.nav-cta:hover{background:transparent;color:var(--gold)}
+.nav-item--has-drop{position:relative}
+.nav-chevron{font-size:0.65rem;display:inline-block;margin-left:0.3rem;vertical-align:middle;line-height:1;color:var(--gold);transition:transform 0.25s var(--ease)}
+.nav-item--has-drop:hover .nav-chevron{transform:rotate(180deg)}
+.nav-dropdown{position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%) translateY(-6px);min-width:215px;list-style:none;background:var(--bg-1);border:1px solid var(--gold-border);border-top:2px solid var(--gold);opacity:0;visibility:hidden;pointer-events:none;transition:opacity 0.25s var(--ease) 0.18s,visibility 0.25s var(--ease) 0.18s,transform 0.25s var(--ease) 0.18s;z-index:300}
+.nav-item--has-drop:hover .nav-dropdown{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0);transition:opacity 0.22s var(--ease),visibility 0.22s var(--ease),transform 0.22s var(--ease)}
+.nav-dropdown::before{content:"";position:absolute;top:-14px;left:0;right:0;height:14px}
+.nav-dropdown li{border-bottom:1px solid rgba(201,168,76,0.07)}
+.nav-dropdown li:last-child{border-bottom:none}
+.nav-dropdown a{display:block;padding:0.8rem 1.25rem;font-family:var(--f-body);font-weight:400;font-size:0.74rem;letter-spacing:0.05em;color:rgba(237,232,223,0.72);transition:color 0.22s var(--ease),background 0.22s var(--ease);white-space:nowrap}
+.nav-dropdown a:hover{color:var(--gold);background:rgba(201,168,76,0.05)}
+.nav-dropdown a::after{display:none}
+.nav-burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.nav-burger span{display:block;width:22px;height:1px;background:var(--t-primary)}
+
+/* ══ MOBILE NAV DRAWER ══ */
+.mobile-nav-overlay{position:fixed;inset:0;background:rgba(11,10,8,0.8);z-index:390;opacity:0;pointer-events:none;transition:opacity 0.35s var(--ease)}
+.mobile-nav-overlay.open{opacity:1;pointer-events:auto}
+.mobile-nav{position:fixed;top:0;right:0;bottom:0;width:min(300px,85vw);background:var(--bg-1);border-left:1px solid var(--gold-border);z-index:400;transform:translateX(100%);transition:transform 0.38s var(--ease);display:flex;flex-direction:column}
+.mobile-nav.open{transform:translateX(0)}
+.mobile-nav-top{display:flex;justify-content:space-between;align-items:center;padding:0.875rem 1.75rem;flex-shrink:0}
+.mobile-nav-label{font-family:var(--f-body);font-weight:700;font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--t-secondary)}
+.mobile-nav-close{background:none;border:none;color:var(--t-secondary);font-size:1.6rem;font-weight:300;line-height:1;cursor:pointer;padding:0.25rem 0.5rem;transition:color 0.25s var(--ease)}
+.mobile-nav-close:hover{color:var(--gold)}
+.mobile-nav-rule{height:1px;background:linear-gradient(to right,var(--gold),rgba(201,168,76,0.25),transparent);flex-shrink:0}
+.mobile-nav-scroll{flex:1;overflow-y:auto;padding:0.5rem 1.75rem 1rem}
+.mobile-nav-links{list-style:none;display:flex;flex-direction:column}
+.mobile-nav-links>li>a{display:block;font-family:var(--f-body);font-weight:600;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--t-primary);padding:1rem 0;border-bottom:1px solid var(--gold-border);transition:color 0.25s var(--ease)}
+.mobile-nav-links>li>a:hover{color:var(--gold)}
+.mobile-nav-sub{list-style:none;padding:0.5rem 0 0.75rem 1rem}
+.mobile-nav-sub li a{display:block;font-family:var(--f-body);font-weight:400;font-size:0.82rem;letter-spacing:0.02em;color:rgba(237,232,223,0.65);padding:0.5rem 0;transition:color 0.25s var(--ease)}
+.mobile-nav-sub li a:hover{color:var(--t-primary)}
+.mobile-nav-cta{display:flex;flex-direction:column;gap:0.75rem;padding:1.25rem 1.75rem;border-top:1px solid var(--gold-border);flex-shrink:0;background:var(--bg-1)}
+
+/* ══ SHARED COMPONENTS ══ */
+.btn-g{display:inline-flex;align-items:center;gap:0.5rem;background:linear-gradient(to right,var(--gold) 50%,transparent 50%);background-size:200% 100%;background-position:right center;color:var(--gold);border:1px solid var(--gold);padding:0.875rem 1.75rem;border-radius:0;font-family:var(--f-body);font-weight:700;font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;cursor:pointer;transition:background-position 0.4s var(--ease),color 0.4s var(--ease)}
+.btn-g:hover{background-position:left center;color:var(--bg-0)}
+.btn-wa{display:inline-flex;align-items:center;gap:0.6rem;background:transparent;color:var(--t-primary);border:1px solid rgba(37,211,102,0.55);padding:0.875rem 1.75rem;border-radius:0;font-family:var(--f-body);font-weight:700;font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;cursor:pointer;transition:border-color 0.3s var(--ease),color 0.3s var(--ease)}
+.btn-wa:hover{border-color:rgba(37,211,102,0.8);color:#25D366}
+.btn-wa::before{content:"";width:14px;height:14px;background:#25D366;border-radius:50%;flex-shrink:0}
+.breadcrumb{display:flex;align-items:center;gap:0.5rem}
+.bc-link{font-family:var(--f-body);font-weight:500;font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(237,232,223,0.55);transition:color 0.3s var(--ease)}
+.bc-link:hover{color:var(--gold)}
+.bc-sep{font-family:var(--f-body);font-size:0.58rem;color:var(--t-muted)}
+.bc-current{font-family:var(--f-body);font-weight:600;font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold)}
+
+/* ══ UTILITY PAGE ══ */
+.util-hero{background:var(--bg-1);border-bottom:1px solid var(--gold-border);padding:calc(80px + 3rem) clamp(2rem,4vw,5rem) 3rem}
+.util-hero-inner{max-width:1320px;margin:0 auto}
+.util-h1{font-family:var(--f-display);font-weight:400;font-size:clamp(2.25rem,4vw,3.75rem);line-height:1.1;font-variation-settings:'opsz' 48,'WONK' 0;color:var(--t-primary);margin-top:1rem}
+.util-meta{font-family:var(--f-body);font-weight:300;font-size:0.78rem;color:var(--t-secondary);margin-top:0.875rem}
+.util-wrap{background:var(--bg-0);padding:clamp(3rem,5vw,5rem) clamp(2rem,4vw,5rem)}
+.util-inner{max-width:760px;margin:0 auto}
+.util-section{padding-bottom:2.75rem;margin-bottom:2.75rem;border-bottom:1px solid var(--gold-border)}
+.util-section:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.util-h2{font-family:var(--f-display);font-weight:400;font-size:clamp(1.2rem,1.8vw,1.5rem);line-height:1.2;font-variation-settings:'opsz' 24,'WONK' 0;color:var(--t-primary);padding-left:1rem;border-left:2px solid var(--gold);margin-bottom:1.375rem}
+.util-h3{font-family:var(--f-body);font-weight:600;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-top:1.75rem;margin-bottom:0.875rem}
+.util-body{font-family:var(--f-body);font-weight:300;font-size:0.9375rem;line-height:1.85;color:var(--t-primary)}
+.util-body+.util-body{margin-top:1rem}
+.util-list{list-style:none;margin:1rem 0 0;padding:0;display:flex;flex-direction:column;gap:0.625rem}
+.util-list li{font-family:var(--f-body);font-weight:300;font-size:0.9375rem;line-height:1.75;color:var(--t-primary);padding-left:1.375rem;position:relative}
+.util-list li::before{content:"";position:absolute;left:0;top:0.75em;width:6px;height:1px;background:var(--gold)}
+.util-address{font-style:normal;font-family:var(--f-body);font-weight:300;font-size:0.9375rem;line-height:2.1;color:var(--t-primary);margin-top:1.25rem;padding:1.25rem 1.5rem;border:1px solid var(--gold-border);border-left:2px solid var(--gold)}
+.util-address a{color:var(--gold);transition:color 0.25s var(--ease)}
+.util-address a:hover{color:var(--gold-light)}
+
+/* ══ FOOTER ══ */
+.footer-outer{background:var(--bg-0);border-top:1px solid var(--gold-border)}
+.f-contact-bar{background:var(--bg-2);border-top:1px solid var(--gold-border);border-bottom:1px solid var(--gold-border)}
+.f-contact-inner{max-width:1320px;margin:0 auto;padding:1.25rem clamp(2rem,4vw,5rem);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem}
+.f-contact-label{font-family:var(--f-body);font-weight:600;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--t-secondary)}
+.f-contact-number{font-family:var(--f-display);font-weight:300;font-size:1.75rem;font-variation-settings:'opsz' 28,'WONK' 0;color:var(--gold);transition:color 0.3s var(--ease)}
+.f-contact-number:hover{color:var(--gold-light)}
+.footer-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 0.8fr 0.7fr 1fr;grid-template-rows:auto auto;gap:2rem;padding:3.5rem clamp(2rem,4vw,5rem) 2.5rem}
+.f-brand-logo{grid-column:1;grid-row:1}
+.footer-grid>div:nth-child(3){grid-column:2;grid-row:1}
+.footer-grid>div:nth-child(4){grid-column:3;grid-row:1}
+.footer-grid>div:nth-child(5){grid-column:4;grid-row:1}
+.footer-grid>div:nth-child(6){grid-column:5;grid-row:1/3}
+.f-brand-text{grid-column:1/5;grid-row:2;border-top:1px solid var(--gold-border);padding-top:2rem}
+.f-logo-main{font-family:var(--f-display);font-weight:300;font-size:1.25rem;font-variation-settings:'opsz' 20,'WONK' 0;color:var(--t-primary);margin-bottom:0.625rem}
+.f-tagline{font-family:var(--f-body);font-weight:300;font-size:0.78rem;line-height:1.75;color:var(--t-secondary);max-width:64ch}
+.f-badge{font-family:var(--f-body);font-weight:700;font-size:0.52rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--t-muted)}
+.f-col-title{font-family:var(--f-body);font-weight:700;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--t-secondary);margin-bottom:1rem}
+.f-links{list-style:none;display:flex;flex-direction:column;gap:0.625rem}
+.f-links a{font-family:var(--f-body);font-weight:300;font-size:0.82rem;color:rgba(237,232,223,0.55);transition:color 0.25s var(--ease)}
+.f-links a:hover{color:var(--gold)}
+.f-social-bar{max-width:1320px;margin:0 auto;padding:1rem clamp(2rem,4vw,5rem);display:flex;align-items:center;gap:1.25rem;border-top:1px solid var(--gold-border)}
+.f-social-label{font-family:var(--f-body);font-weight:700;font-size:0.52rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--t-muted)}
+.f-social-link{width:34px;height:34px;border:1px solid var(--gold-border);display:flex;align-items:center;justify-content:center;color:var(--t-secondary);transition:border-color 0.25s var(--ease),color 0.25s var(--ease)}
+.f-social-link:hover{border-color:var(--gold-border-hover);color:var(--gold)}
+.f-social-link svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.footer-bar{max-width:1320px;margin:0 auto;padding:1.25rem clamp(2rem,4vw,5rem);border-top:1px solid var(--gold-border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem}
+.footer-copy{font-family:var(--f-body);font-weight:300;font-size:0.62rem;letter-spacing:0.06em;color:var(--t-secondary)}
+
+/* ══ RESPONSIVE TABLET <= 1024px ══ */
+@media(max-width:1024px){
+  .nav-links{gap:1.5rem}
+}
+
+/* ══ RESPONSIVE MOBILE <= 768px ══ */
+@media(max-width:768px){
+  .nav-links,.nav-cta{display:none}
+  .nav-burger{display:flex}
+  .nav{background:rgba(11,10,8,0.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--gold-border);height:90px;padding-bottom:0.5rem;padding-left:1.5rem;padding-right:1.5rem}
+  .util-hero{padding:calc(90px + 2rem) 1.5rem 2.5rem}
+  .util-wrap{padding:2.5rem 1.5rem}
+  .util-h2{font-size:1.15rem}
+  .footer-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;gap:1.75rem;padding:2.5rem 1.5rem 2rem}
+  .f-brand-logo{grid-column:1/-1;grid-row:auto;display:flex;justify-content:center}
+  .f-brand-logo img{height:200px!important;width:200px!important}
+  .f-brand-text{grid-column:1/-1;grid-row:auto;border-top:1px solid var(--gold-border);padding-top:1.75rem}
+  .footer-grid>div:nth-child(3),.footer-grid>div:nth-child(4),.footer-grid>div:nth-child(5),.footer-grid>div:nth-child(6){grid-column:auto;grid-row:auto}
+  .footer-bar{flex-direction:column;align-items:flex-start;gap:0.375rem}
+}
+
+/* ── Red Black Marketing footer credit ── */
+.rbm-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.25s ease;
+  flex-shrink: 0;
+}
+.rbm-credit:hover { opacity: 1; }
+.rbm-credit-label {
+  font-family: var(--f-body);
+  font-size: 0.62rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: var(--t-secondary);
+  white-space: nowrap;
+}
+.rbm-credit-name {
+  font-family: var(--f-body);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .rbm-credit { margin-top: 0.25rem; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main-content" style="position:absolute;top:-40px;left:0;background:var(--gold);color:var(--bg-0);padding:0.5rem 1rem;z-index:9999;font-family:var(--f-body);font-size:0.75rem;font-weight:700;transition:top 0.2s" onfocus="this.style.top='0'" onblur="this.style.top='-40px'">Skip to content</a>
+
+<!-- ══ NAV ══ -->
+<nav class="nav" id="main-nav" aria-label="Primary navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Bushiangala Gold Extractives — home">
+      <img src="Updated Bushiangala Gold Mining Logo/Bushialanga Gold Logo.webp" alt="Bushiangala Gold Extractives logo" width="200" height="200">
+    </a>
+    <ul class="nav-links">
+      <li class="nav-item--has-drop">
+        <a href="gold-products.html">Gold Products <span class="nav-chevron">▾</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="1kg-gold-bars.html">1KG Gold Bars</a></li>
+          <li><a href="5kg-gold-bars.html">5KG Gold Bars</a></li>
+          <li><a href="12-5kg-gold-bars.html">12.5KG Gold Bars</a></li>
+          <li><a href="dore-gold-bars.html">Dor&eacute; Gold Bars</a></li>
+          <li><a href="gold-nuggets.html">Gold Nuggets</a></li>
+          <li><a href="custom-bulk-orders.html">Custom &amp; Bulk Orders</a></li>
+        </ul>
+      </li>
+      <li class="nav-item--has-drop">
+        <a href="gold-export-services.html">Services <span class="nav-chevron">▾</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="gold-export-services.html">Gold Export Services</a></li>
+        </ul>
+      </li>
+      <li><a href="our-gold.html">Our Gold</a></li>
+      <li class="nav-item--has-drop">
+        <a href="our-mines-kenya.html">Our Mines <span class="nav-chevron">▾</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="our-mines-kenya.html">Kenya</a></li>
+          
+          
+        </ul>
+      </li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="gold-export-services.html#enquiry" class="nav-cta">Get a Quote</a>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══ MOBILE NAV DRAWER ══ -->
+<div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true"></div>
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <div class="mobile-nav-top">
+    <span class="mobile-nav-label">Menu</span>
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">&#215;</button>
+  </div>
+  <div class="mobile-nav-rule"></div>
+  <div class="mobile-nav-scroll">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="gold-products.html">Gold Products</a>
+        <ul class="mobile-nav-sub">
+          <li><a href="1kg-gold-bars.html">1KG Gold Bars</a></li>
+          <li><a href="5kg-gold-bars.html">5KG Gold Bars</a></li>
+          <li><a href="12-5kg-gold-bars.html">12.5KG Gold Bars</a></li>
+          <li><a href="dore-gold-bars.html">Dor&eacute; Gold Bars</a></li>
+          <li><a href="gold-nuggets.html">Gold Nuggets</a></li>
+          <li><a href="custom-bulk-orders.html">Custom &amp; Bulk Orders</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="gold-export-services.html">Services</a>
+        <ul class="mobile-nav-sub">
+          <li><a href="gold-export-services.html">Gold Export Services</a></li>
+        </ul>
+      </li>
+      <li><a href="our-gold.html">Our Gold</a></li>
+      <li>
+        <a href="our-mines-kenya.html">Our Mines</a>
+        <ul class="mobile-nav-sub">
+          <li><a href="our-mines-kenya.html">Kenya</a></li>
+          
+          
+        </ul>
+      </li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="mobile-nav-cta">
+    <a href="gold-export-services.html#enquiry" class="btn-g" id="mobile-nav-quote">Get a Quote &nbsp;&rarr;</a>
+    <a href="https://wa.me/254100006445" class="btn-wa" target="_blank" rel="noopener">WhatsApp Us</a>
+  </div>
+</div>
+
+<main id="main-content">
+
+<!-- ══ PAGE HEADER ══ -->
+<div class="util-hero">
+  <div class="util-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html" class="bc-link">Home</a>
+      <span class="bc-sep">&middot;</span>
+      <span class="bc-current">Privacy Policy</span>
+    </div>
+    <h1 class="util-h1">Privacy Policy</h1>
+    <p class="util-meta">Last updated: May 2026</p>
+  </div>
+</div>
+
+<!-- ══ CONTENT ══ -->
+<div class="util-wrap">
+  <div class="util-inner">
+
+    <div class="util-section">
+      <h2 class="util-h2">1. Who We Are</h2>
+      <p class="util-body">Bushiangala Gold Extractives is a licensed gold mining and export company registered in Kenya. We operate through our website at bushiangalagold.com, where we provide information about our gold products and receive enquiries from international buyers.</p>
+      <p class="util-body">For the purposes of this Privacy Policy, Bushiangala Gold Extractives is the data controller responsible for your personal information. Our registered address is 4th floor, Room 13, Kenrail Towers, Westlands, off Ring Road, Nairobi.</p>
+      <p class="util-body">When this policy refers to "we", "us", or "our", we mean Bushiangala Gold Extractives. When it refers to "you" or "your", we mean the individual accessing our website or submitting an enquiry.</p>
+    </div>
+
+    <div class="util-section">
+      <h2 class="util-h2">2. What Information We Collect</h2>
+
+      <h3 class="util-h3">2.1 Information you provide via our enquiry form</h3>
+      <p class="util-body">When you complete and submit the contact or enquiry form on our website, we collect the information you enter. This typically includes your name, email address, phone number (if provided), and the content of your message or enquiry. We also record the date and time your submission was received.</p>
+      <p class="util-body">We use this information solely to respond to your enquiry and, where relevant, to progress a commercial discussion with you. We do not add your details to marketing lists without your explicit consent.</p>
+
+      <h3 class="util-h3">2.2 Information collected automatically via Google Analytics</h3>
+      <p class="util-body">Our website uses Google Analytics, a web analytics service operated by Google LLC. Google Analytics collects information about how visitors use our website, including: pages visited, time spent on each page, the website or search engine that referred you to us, your approximate geographic location, browser type, device type, and a truncated or anonymised version of your IP address.</p>
+      <p class="util-body">This information is aggregated and used by us to understand how our website is being used and to identify areas for improvement. We do not use Google Analytics data to identify individual visitors. Google LLC is based in the United States. For information on how Google handles this data, please refer to Google's Privacy Policy at policies.google.com/privacy.</p>
+
+      <h3 class="util-h3">2.3 Information passed to third-party platforms (WhatsApp)</h3>
+      <p class="util-body">Our website includes a WhatsApp contact button. When you click this button, you are redirected to WhatsApp, a messaging platform operated by Meta Platforms, Inc. Any conversation that takes place through WhatsApp is subject to WhatsApp's own privacy policy and terms of service, available at whatsapp.com/legal/privacy-policy.</p>
+      <p class="util-body">The WhatsApp widget, when loaded on our website, may also transmit limited technical data to Meta's servers as part of the widget's standard operation. Bushiangala Gold Extractives does not control or receive this data. We recommend reviewing WhatsApp's privacy policy before initiating contact through that platform.</p>
+    </div>
+
+    <div class="util-section">
+      <h2 class="util-h2">3. How We Use Your Information</h2>
+      <p class="util-body">We use the information we collect for the following purposes:</p>
+      <ul class="util-list">
+        <li>To respond to enquiries submitted through our contact form</li>
+        <li>To progress a commercial discussion or quotation where you have requested one</li>
+        <li>To understand how our website is being used and to improve the visitor experience</li>
+        <li>To comply with our legal and regulatory obligations where applicable</li>
+      </ul>
+      <p class="util-body" style="margin-top:1rem;">We do not sell your personal information to third parties. We do not use your information for automated decision-making or profiling.</p>
+    </div>
+
+    <div class="util-section">
+      <h2 class="util-h2">4. Our Legal Basis for Processing Your Data</h2>
+      <p class="util-body">For visitors from the European Economic Area (EEA) and the United Kingdom, we process your personal data on the following legal bases under the EU GDPR and UK GDPR:</p>
+      <ul class="util-list">
+        <li><strong style="font-weight:600;color:var(--t-primary);">Legitimate interests:</strong> We process website analytics data and enquiry data on the basis of our legitimate interest in understanding how our website performs and in responding to business enquiries. We have assessed that this interest is not outweighed by your privacy rights.</li>
+        <li><strong style="font-weight:600;color:var(--t-primary);">Contract:</strong> Where a commercial discussion progresses to a formal purchase agreement, we process your personal data as necessary for the performance of that contract.</li>
+        <li><strong style="font-weight:600;color:var(--t-primary);">Consent:</strong> Where we use non-essential cookies, we will seek your consent before placing them on your device.</li>
+      </ul>
+    </div>
+
+    <div class="util-section">
+      <h2 class="util-h2">5. Cookies</h2>
+      <p class="util-body">Our website uses cookies, which are small text files placed on your device when you visit. Some cookies are essential for the website to function. Others, including those set by Google Analytics, collect information about how visitors use the website.</p>
+      <p class="util-body">When you first visit our website, you will be presented with a cookie notice. Non-essential cookies will only be activated if you accept them. You can withdraw your consent at any time by clearing your browser cookies and declining them on your next visit. For more information on managing cookies, visit allaboutcookies.org.</p>
+    </div>
+
+    <div class="util-section">
+      <h2 class="util-h2">6. Third-Party Services</h2>
+
+      <h3 class="util-h3">6.1 Google Analytics</h3>
+      <p class="util-body">We use Google Analytics to understand how visitors use our website. Google acts as a data processor on our behalf under a data processing agreement. Google LLC may transfer and process data in the United States. Google participates in appropriate data transfer mechanisms under the EU GDPR. For details, see policies.google.com/privacy.</p>
+
+      <h3 class="util-h3">6.2 WhatsApp (Meta Platforms, Inc.)</h3>
+      <p class="util-body">When you use our WhatsApp contact button, you interact directly with a service operated by Meta Platforms, Inc. Bushiangala Gold Extractives is not responsible for how Meta processes your data through the WhatsApp platform. Please refer to WhatsApp's privacy policy for full details of how your data is handled.</p>
+    </div>
+
+    <div class="util-section">
+      <h2 class="util-h2">7. How Long We Keep Your Data</h2>
+      <ul class="util-list">
+        <li><strong style="font-weight:600;color:var(--t-primary);">Enquiry form submissions:</strong> We retain your data for up to 24 months from the date of submission, or for as long as necessary to progress any related commercial discussion. If no commercial relationship results, your data will be deleted or anonymised at the end of this period.</li>
+        <li><strong style="font-weight:600;color:var(--t-primary);">Google Analytics data:</strong> Retained in accordance with Google's standard settings, typically 14 months, after which it is automatically deleted.</li>
+        <li><strong style="font-weight:600;color:var(--t-primary);">WhatsApp conversations:</strong> Retained in accordance with WhatsApp's own data retention policies.</li>
+      </ul>
+    </div>
+
+    <div class="util-section">
+      <h2 class="util-h2">8. International Data Transfers</h2>
+      <p class="util-body">Bushiangala Gold Extractives is based in Kenya. If you are accessing our website from the EEA, the United Kingdom, or another jurisdiction with data protection laws, please be aware that your data may be processed in Kenya, in the United States (via Google LLC and Meta Platforms, Inc.), or in other countries where data protection laws may differ from those in your home country.</p>
+      <p class="util-body">Where we transfer your data internationally, we take steps to ensure that appropriate safeguards are in place, including relying on data transfer mechanisms recognised under applicable law.</p>
+    </div>
+
+    <div class="util-section">
+      <h2 class="util-h2">9. Your Rights</h2>
+      <p class="util-body">Depending on your location, you may have the following rights in relation to your personal data:</p>
+      <ul class="util-list">
+        <li>The right to access the personal data we hold about you</li>
+        <li>The right to correct inaccurate or incomplete data</li>
+        <li>The right to request that we delete your personal data</li>
+        <li>The right to restrict how we process your data in certain circumstances</li>
+        <li>The right to receive your data in a portable format</li>
+        <li>The right to object to processing based on our legitimate interests</li>
+        <li>The right to withdraw consent where processing is based on consent</li>
+      </ul>
+    </div>
+
+    <div class="util-section">
+      <h2 class="util-h2">10. How to Exercise Your Rights</h2>
+      <p class="util-body">To exercise any of the rights listed above, please contact us at <a href="mailto:info@bushiangalagold.com" style="color:var(--gold);transition:color 0.25s">info@bushiangalagold.com</a> with a clear description of your request. We will respond within 30 days. We may need to verify your identity before processing your request.</p>
+    </div>
+
+    <div class="util-section">
+      <h2 class="util-h2">11. Complaints</h2>
+      <p class="util-body">If you believe we have not handled your personal data in accordance with this policy or applicable law, you have the right to lodge a complaint with the relevant supervisory authority. In Kenya, the relevant authority is the Office of the Data Protection Commissioner (ODPC). In the EEA, please contact your national supervisory authority. In the United Kingdom, the relevant authority is the Information Commissioner's Office (ICO) at ico.org.uk.</p>
+    </div>
+
+    <div class="util-section">
+      <h2 class="util-h2">12. Changes to This Policy</h2>
+      <p class="util-body">We may update this Privacy Policy from time to time. When we do, we will revise the "last updated" date at the top of this page. We encourage you to review this policy periodically. Your continued use of our website after any changes are posted constitutes your acceptance of the updated policy.</p>
+    </div>
+
+    <div class="util-section">
+      <h2 class="util-h2">13. Contact Us</h2>
+      <p class="util-body">If you have any questions about this Privacy Policy, please contact us:</p>
+      <address class="util-address">
+        Bushiangala Gold Extractives<br>
+        4th floor, Room 13, Kenrail Towers, Westlands, off Ring Road<br>
+        Nairobi<br>
+        Email: <a href="mailto:info@bushiangalagold.com">info@bushiangalagold.com</a>
+      </address>
+    </div>
+
+  </div>
+</div>
+
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer-outer">
+
+  <!-- Contact bar -->
+  <div class="f-contact-bar">
+    <div class="f-contact-inner">
+      <span class="f-contact-label">Call or Message us on WhatsApp</span>
+      <a href="https://wa.me/254100006445" class="f-contact-number" target="_blank" rel="noopener">+254 100 006 445</a>
+      <span class="f-wa-badge">WhatsApp Available</span>
+    </div>
+  </div>
+
+  <!-- Main link columns -->
+  <div class="footer-grid">
+
+    <!-- Brand column -->
+    <div class="f-brand-logo">
+      <img src="Updated Bushiangala Gold Mining Logo/Bushialanga Gold Logo.webp" alt="Bushialangala Gold Extractives" style="height:220px;width:220px;object-fit:contain;display:block;">
+    </div>
+    <div class="f-brand-text">
+      <p class="f-logo-main">Bushiangala Gold Mining Extractives</p>
+      <p class="f-tagline">Government-licensed gold miner and exporter operating across Kenya, DRC, and South Sudan. With 25 years of operation, we supply 96%&ndash;99.99% certified gold bars direct to international buyers worldwide.</p>
+      <span class="f-badge" style="margin-top:1.25rem;">KE Business Registration &middot; Reg. No. PVT-L51DWDAM</span>
+    </div>
+
+    <!-- Gold Products -->
+    <div>
+      <p class="f-col-title">Gold Products</p>
+      <ul class="f-links">
+        <li><a href="1kg-gold-bars.html">1KG Gold Bars</a></li>
+        <li><a href="5kg-gold-bars.html">5KG Gold Bars</a></li>
+        <li><a href="12-5kg-gold-bars.html">12.5KG Gold Bars</a></li>
+        <li><a href="dore-gold-bars.html">Dor&eacute; Gold Bars</a></li>
+        <li><a href="gold-nuggets.html">Gold Nuggets</a></li>
+        <li><a href="custom-bulk-orders.html">Custom &amp; Bulk Orders</a></li>
+      </ul>
+    </div>
+
+    <!-- Services & Locations -->
+    <div>
+      <p class="f-col-title">Services &amp; Locations</p>
+      <ul class="f-links">
+        <li><a href="gold-export-services.html">Gold Export Services</a></li>
+        <li><a href="our-mines-kenya.html">Kenya Gold Mining</a></li>
+      </ul>
+    </div>
+
+    <!-- Company -->
+    <div>
+      <p class="f-col-title">Company</p>
+      <ul class="f-links">
+        <li><a href="our-gold.html">Our Gold</a></li>
+        <li><a href="insights.html">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact & Legal -->
+    <div>
+      <p class="f-col-title">Contact &amp; Legal</p>
+      <ul class="f-links">
+        <li><a href="https://wa.me/254100006445" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+        <li><a href="contact.html#enquiry-form">Get a Quote</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <ul class="f-links" style="margin-top:1.25rem;">
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Social bar -->
+  <div class="footer-outer" style="border-top:none;">
+    <div class="f-social-bar">
+      <span class="f-social-label">Follow us</span>
+      <a href="https://instagram.com/bushiangalagold" class="f-social-link" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bar" style="flex-wrap:wrap; gap:0.5rem;">
+    <div>
+      <span class="footer-copy">4th Floor, Room 13, Kenrail Towers, Westlands off Ring Road, Nairobi, Kenya</span><br>
+      <span class="footer-copy">Licensed under KE Business Registration Service &middot; Reg. No. PVT-L51DWDAM</span>
+    </div>
+    <span class="footer-copy">E-Mail: <a href="mailto:info@bushiangalagold.com" style="color:inherit;">info@bushiangalagold.com</a></span>
+    <span class="footer-copy">&copy; 2026 Bushiangala Gold Mining Extractives. All rights reserved.</span>
+    <a href="https://redblackmarketing.com" class="rbm-credit" target="_blank" rel="noopener" aria-label="Website designed and built by Red Black Marketing">
+      <span class="rbm-credit-label">Site by</span>
+      <span class="rbm-credit-name">Red Black Marketing</span>
+    </a>
+  </div>
+</footer>
+
+<script>
+/* Nav scroll */
+var mainNav=document.getElementById('main-nav');
+window.addEventListener('scroll',function(){mainNav.classList.toggle('scrolled',window.scrollY>36)});
+
+/* Mobile nav drawer */
+var mobileNav=document.getElementById('mobile-nav');
+var mobileNavOverlay=document.getElementById('mobile-nav-overlay');
+var navBurger=document.querySelector('.nav-burger');
+var mobileNavClose=document.getElementById('mobile-nav-close');
+var mobileNavQuote=document.getElementById('mobile-nav-quote');
+function openMobileNav(){mobileNav.classList.add('open');mobileNavOverlay.classList.add('open');document.body.style.overflow='hidden'}
+function closeMobileNav(){mobileNav.classList.remove('open');mobileNavOverlay.classList.remove('open');document.body.style.overflow=''}
+navBurger.addEventListener('click',openMobileNav);
+mobileNavClose.addEventListener('click',closeMobileNav);
+mobileNavOverlay.addEventListener('click',closeMobileNav);
+if(mobileNavQuote){mobileNavQuote.addEventListener('click',closeMobileNav)}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeMobileNav()}});
+</script>
+</body>
+</html>
